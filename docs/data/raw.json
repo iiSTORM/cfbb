@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-08T13:27:49.292226+00:00",
+  "fetchedAt": "2026-09-08T13:37:24.277120+00:00",
   "season": 2026,
   "seasonType": "regular",
   "advancedStatsByTeam": {
@@ -15463,10 +15463,12 @@
   "recentDefenseByTeam": {
     "Oberlin": [],
     "Denison": [],
-    "Shippensburg": [],
-    "West Virginia Wesleyan": [],
     "Arkansas Tech": [],
     "Northwestern (OK)": [],
+    "Shippensburg": [],
+    "West Virginia Wesleyan": [],
+    "Arkansas Monticello": [],
+    "East Central": [],
     "Florida A&M": [
       {
         "gameId": 401867939,
@@ -15725,520 +15727,6 @@
     ],
     "Harding": [],
     "Southwestern Oklahoma State": [],
-    "Arkansas Monticello": [],
-    "East Central": [],
-    "Villanova": [
-      {
-        "gameId": 401867989,
-        "season": 2026,
-        "seasonType": "regular",
-        "week": 1,
-        "team": "Villanova",
-        "opponent": "Bucknell",
-        "offense": {
-          "plays": 56,
-          "drives": 10,
-          "ppa": 0.09593173750588059,
-          "totalPPA": 5.372177300329313,
-          "successRate": 0.39285714285714285,
-          "explosiveness": 1.2053942704013323,
-          "powerSuccess": 0.6,
-          "stuffRate": 0.25806451612903225,
-          "lineYards": 1.696774193548387,
-          "lineYardsTotal": 53,
-          "secondLevelYards": 0.8387096774193549,
-          "secondLevelYardsTotal": 26,
-          "openFieldYards": 0.4838709677419355,
-          "openFieldYardsTotal": 15,
-          "standardDowns": {
-            "ppa": 0.11678694468018112,
-            "successRate": 0.5,
-            "explosiveness": 1.066753831140614
-          },
-          "passingDowns": {
-            "ppa": 0.05190407791569059,
-            "successRate": 0.16666666666666666,
-            "explosiveness": 2.0834503857192157
-          },
-          "rushingPlays": {
-            "ppa": -0.3065417334475963,
-            "totalPPA": -9.502793736875484,
-            "successRate": 0.2903225806451613,
-            "explosiveness": 0.4982945976202828
-          },
-          "passingPlays": {
-            "ppa": 0.6949402070749829,
-            "totalPPA": 15.288684555649626,
-            "successRate": 0.5454545454545454,
-            "explosiveness": 1.7630186075817276
-          }
-        },
-        "defense": {
-          "plays": 69,
-          "drives": 9,
-          "ppa": 0.020564496007344054,
-          "totalPPA": 1.4189502245067396,
-          "successRate": 0.37681159420289856,
-          "explosiveness": 1.1667242562354019,
-          "powerSuccess": 0.5,
-          "stuffRate": 0.18518518518518517,
-          "lineYards": 2.1703703703703705,
-          "lineYardsTotal": 59,
-          "secondLevelYards": 0.48148148148148145,
-          "secondLevelYardsTotal": 13,
-          "openFieldYards": 0.14814814814814814,
-          "openFieldYardsTotal": 4,
-          "standardDowns": {
-            "ppa": 0.019753139311680868,
-            "successRate": 0.46511627906976744,
-            "explosiveness": 1.018761891302056
-          },
-          "passingDowns": {
-            "ppa": 0.021906355157863936,
-            "successRate": 0.23076923076923078,
-            "explosiveness": 1.659932139346555
-          },
-          "rushingPlays": {
-            "ppa": -0.45187702723758033,
-            "totalPPA": -12.200679735414669,
-            "successRate": 0.2962962962962963,
-            "explosiveness": 0.44202247221759505
-          },
-          "passingPlays": {
-            "ppa": 0.32427690380765256,
-            "totalPPA": 13.619629959921408,
-            "successRate": 0.42857142857142855,
-            "explosiveness": 1.4888139380210939
-          }
-        }
-      },
-      {
-        "gameId": 401868040,
-        "season": 2026,
-        "seasonType": "regular",
-        "week": 1,
-        "team": "Villanova",
-        "opponent": "William & Mary",
-        "offense": {
-          "plays": 62,
-          "drives": 13,
-          "ppa": 0.12326419545786098,
-          "totalPPA": 7.642380118387381,
-          "successRate": 0.5,
-          "explosiveness": 1.208633827410461,
-          "powerSuccess": 0.6,
-          "stuffRate": 0.16666666666666666,
-          "lineYards": 3.12,
-          "lineYardsTotal": 94,
-          "secondLevelYards": 1.1,
-          "secondLevelYardsTotal": 33,
-          "openFieldYards": 1.3,
-          "openFieldYardsTotal": 39,
-          "standardDowns": {
-            "ppa": -0.11284438146536818,
-            "successRate": 0.5434782608695652,
-            "explosiveness": 0.8572928626477913
-          },
-          "passingDowns": {
-            "ppa": 0.8020763541121448,
-            "successRate": 0.375,
-            "explosiveness": 2.672554513921585
-          },
-          "rushingPlays": {
-            "ppa": 0.016223253485479722,
-            "totalPPA": 0.48669760456439165,
-            "successRate": 0.5,
-            "explosiveness": 1.0216269212105153
-          },
-          "passingPlays": {
-            "ppa": 0.5033280496860868,
-            "totalPPA": 14.093185391210431,
-            "successRate": 0.5357142857142857,
-            "explosiveness": 1.4119669906624495
-          }
-        },
-        "defense": {
-          "plays": 78,
-          "drives": 13,
-          "ppa": 0.10685727624542027,
-          "totalPPA": 8.334867547142782,
-          "successRate": 0.358974358974359,
-          "explosiveness": 1.3852076456287132,
-          "powerSuccess": 1,
-          "stuffRate": 0.23076923076923078,
-          "lineYards": 2.3,
-          "lineYardsTotal": 90,
-          "secondLevelYards": 0.8974358974358975,
-          "secondLevelYardsTotal": 35,
-          "openFieldYards": 1.4871794871794872,
-          "openFieldYardsTotal": 58,
-          "standardDowns": {
-            "ppa": -0.2593590597646546,
-            "successRate": 0.37777777777777777,
-            "explosiveness": 0.6599982991181222
-          },
-          "passingDowns": {
-            "ppa": 0.6062431889864315,
-            "successRate": 0.3333333333333333,
-            "explosiveness": 2.5059857265996266
-          },
-          "rushingPlays": {
-            "ppa": 0.03428552079663103,
-            "totalPPA": 1.3371353110686102,
-            "successRate": 0.41025641025641024,
-            "explosiveness": 0.8498754684630987
-          },
-          "passingPlays": {
-            "ppa": 0.18759264632252148,
-            "totalPPA": 7.128520560255816,
-            "successRate": 0.3157894736842105,
-            "explosiveness": 2.0989838818495326
-          }
-        }
-      }
-    ],
-    "Louisville": [
-      {
-        "gameId": 401856661,
-        "season": 2026,
-        "seasonType": "regular",
-        "week": 1,
-        "team": "Louisville",
-        "opponent": "Ole Miss",
-        "offense": {
-          "plays": 68,
-          "drives": 13,
-          "ppa": 0.38861896963434567,
-          "totalPPA": 26.426089935135508,
-          "successRate": 0.45588235294117646,
-          "explosiveness": 1.5103542544262112,
-          "powerSuccess": 0.8,
-          "stuffRate": 0.25,
-          "lineYards": 2.325,
-          "lineYardsTotal": 84,
-          "secondLevelYards": 1.1944444444444444,
-          "secondLevelYardsTotal": 43,
-          "openFieldYards": 2.555555555555556,
-          "openFieldYardsTotal": 92,
-          "standardDowns": {
-            "ppa": 0.3468477611613331,
-            "successRate": 0.5434782608695652,
-            "explosiveness": 1.2744137353134566
-          },
-          "passingDowns": {
-            "ppa": 0.4759587691688266,
-            "successRate": 0.2727272727272727,
-            "explosiveness": 2.4934397507293555
-          },
-          "rushingPlays": {
-            "ppa": 0.31652127792501844,
-            "totalPPA": 11.394766005300664,
-            "successRate": 0.5,
-            "explosiveness": 1.155917369606515
-          },
-          "passingPlays": {
-            "ppa": 0.4697288728073389,
-            "totalPPA": 15.031323929834844,
-            "successRate": 0.40625,
-            "explosiveness": 2.0011130180227137
-          }
-        },
-        "defense": {
-          "plays": 80,
-          "drives": 13,
-          "ppa": 0.2976736148603684,
-          "totalPPA": 23.81388918882947,
-          "successRate": 0.4625,
-          "explosiveness": 1.3097367268750522,
-          "powerSuccess": 0.6363636363636364,
-          "stuffRate": 0.14285714285714285,
-          "lineYards": 3.0833333333333335,
-          "lineYardsTotal": 130,
-          "secondLevelYards": 0.7142857142857143,
-          "secondLevelYardsTotal": 30,
-          "openFieldYards": 0.19047619047619047,
-          "openFieldYardsTotal": 8,
-          "standardDowns": {
-            "ppa": 0.3141235462247612,
-            "successRate": 0.5689655172413793,
-            "explosiveness": 1.0868313491787553
-          },
-          "passingDowns": {
-            "ppa": 0.25430561399060564,
-            "successRate": 0.18181818181818182,
-            "explosiveness": 3.1487060928695008
-          },
-          "rushingPlays": {
-            "ppa": 0.12674680090232018,
-            "totalPPA": 5.323365637897448,
-            "successRate": 0.5238095238095238,
-            "explosiveness": 0.7393265394831856
-          },
-          "passingPlays": {
-            "ppa": 0.5351104502053422,
-            "totalPPA": 18.728865757186977,
-            "successRate": 0.4,
-            "explosiveness": 2.2758357303353054
-          }
-        }
-      }
-    ],
-    "Norfolk State": [
-      {
-        "gameId": 401867972,
-        "season": 2026,
-        "seasonType": "regular",
-        "week": 1,
-        "team": "Norfolk State",
-        "opponent": "Winston-Salem State",
-        "offense": {
-          "plays": 69,
-          "drives": 10,
-          "ppa": 0.5039695161316249,
-          "totalPPA": 34.773896613082115,
-          "successRate": 0.5362318840579711,
-          "explosiveness": 1.325533548578486,
-          "powerSuccess": 0.8,
-          "stuffRate": 0.06976744186046512,
-          "lineYards": 4.083720930232558,
-          "lineYardsTotal": 176,
-          "secondLevelYards": 1.744186046511628,
-          "secondLevelYardsTotal": 75,
-          "openFieldYards": 1.8837209302325582,
-          "openFieldYardsTotal": 81,
-          "standardDowns": {
-            "ppa": 0.28604739684429004,
-            "successRate": 0.5185185185185185,
-            "explosiveness": 0.9643012123019742
-          },
-          "passingDowns": {
-            "ppa": 1.2884891455660301,
-            "successRate": 0.6,
-            "explosiveness": 2.449367483660967
-          },
-          "rushingPlays": {
-            "ppa": 0.5845895211385685,
-            "totalPPA": 25.137349408958446,
-            "successRate": 0.5581395348837209,
-            "explosiveness": 1.279925200521906
-          },
-          "passingPlays": {
-            "ppa": 0.37063643092783344,
-            "totalPPA": 9.63654720412367,
-            "successRate": 0.5,
-            "explosiveness": 1.4097335757598646
-          }
-        },
-        "defense": {
-          "plays": 49,
-          "drives": 11,
-          "ppa": -0.03336052632637274,
-          "totalPPA": -1.6346657899922645,
-          "successRate": 0.20408163265306123,
-          "explosiveness": 2.1561217464641644,
-          "powerSuccess": 0,
-          "stuffRate": 0.3,
-          "lineYards": 2,
-          "lineYardsTotal": 40,
-          "secondLevelYards": 0.55,
-          "secondLevelYardsTotal": 11,
-          "openFieldYards": 0.7,
-          "openFieldYardsTotal": 14,
-          "standardDowns": {
-            "ppa": -0.3848012029458498,
-            "successRate": 0.16666666666666666,
-            "explosiveness": 0.934265913257303
-          },
-          "passingDowns": {
-            "ppa": 0.30402252322832524,
-            "successRate": 0.24,
-            "explosiveness": 2.9706923019354057
-          },
-          "rushingPlays": {
-            "ppa": -0.20312534771183555,
-            "totalPPA": -4.062506954236711,
-            "successRate": 0.2,
-            "explosiveness": 1.0239190365299344
-          },
-          "passingPlays": {
-            "ppa": -0.224690823596925,
-            "totalPPA": -5.84196141352005,
-            "successRate": 0.15384615384615385,
-            "explosiveness": 2.2000214791648616
-          }
-        }
-      },
-      {
-        "gameId": 401867973,
-        "season": 2026,
-        "seasonType": "regular",
-        "week": 1,
-        "team": "Norfolk State",
-        "opponent": "Old Dominion",
-        "offense": {
-          "plays": 61,
-          "drives": 11,
-          "ppa": -0.20982101497969444,
-          "totalPPA": -12.799081913761361,
-          "successRate": 0.26229508196721313,
-          "explosiveness": 1.0102859391372834,
-          "powerSuccess": 0.5,
-          "stuffRate": 0.23684210526315788,
-          "lineYards": 2.281578947368421,
-          "lineYardsTotal": 87,
-          "secondLevelYards": 0.7894736842105263,
-          "secondLevelYardsTotal": 30,
-          "openFieldYards": 1.5789473684210527,
-          "openFieldYardsTotal": 60,
-          "standardDowns": {
-            "ppa": -0.3917622491690464,
-            "successRate": 0.3055555555555556,
-            "explosiveness": 0.36665400431758344
-          },
-          "passingDowns": {
-            "ppa": 0.052174362252972395,
-            "successRate": 0.2,
-            "explosiveness": 2.426276195740623
-          },
-          "rushingPlays": {
-            "ppa": -0.19485209977408993,
-            "totalPPA": -7.404379791415418,
-            "successRate": 0.23684210526315788,
-            "explosiveness": 0.9854962157543136
-          },
-          "passingPlays": {
-            "ppa": -0.22869464457988783,
-            "totalPPA": -5.0312821807575325,
-            "successRate": 0.3181818181818182,
-            "explosiveness": 1.0421584406296729
-          }
-        },
-        "defense": {
-          "plays": 57,
-          "drives": 12,
-          "ppa": 0.2183864577720761,
-          "totalPPA": 12.448028093008338,
-          "successRate": 0.42105263157894735,
-          "explosiveness": 1.403199988382679,
-          "powerSuccess": 0.3333333333333333,
-          "stuffRate": 0.25,
-          "lineYards": 2.7475,
-          "lineYardsTotal": 110,
-          "secondLevelYards": 1.4,
-          "secondLevelYardsTotal": 56,
-          "openFieldYards": 1.225,
-          "openFieldYardsTotal": 49,
-          "standardDowns": {
-            "ppa": -0.12543243595587036,
-            "successRate": 0.38095238095238093,
-            "explosiveness": 0.8386415420666612
-          },
-          "passingDowns": {
-            "ppa": 1.1810793602103262,
-            "successRate": 0.5333333333333333,
-            "explosiveness": 2.5323168810147143
-          },
-          "rushingPlays": {
-            "ppa": 0.1454912651931437,
-            "totalPPA": 5.819650607725749,
-            "successRate": 0.425,
-            "explosiveness": 1.1652562490127027
-          },
-          "passingPlays": {
-            "ppa": 0.5527960792121509,
-            "totalPPA": 8.291941188182264,
-            "successRate": 0.4666666666666667,
-            "explosiveness": 1.9810633554240495
-          }
-        }
-      }
-    ],
-    "Virginia": [
-      {
-        "gameId": 401858202,
-        "season": 2026,
-        "seasonType": "regular",
-        "week": 1,
-        "team": "Virginia",
-        "opponent": "NC State",
-        "offense": {
-          "plays": 71,
-          "drives": 12,
-          "ppa": 0.27262204040865434,
-          "totalPPA": 19.35616486901446,
-          "successRate": 0.4788732394366197,
-          "explosiveness": 1.0612371845133193,
-          "powerSuccess": 0.8333333333333334,
-          "stuffRate": 0.14285714285714285,
-          "lineYards": 3.305357142857143,
-          "lineYardsTotal": 185,
-          "secondLevelYards": 1.0178571428571428,
-          "secondLevelYardsTotal": 57,
-          "openFieldYards": 0.7678571428571429,
-          "openFieldYardsTotal": 43,
-          "standardDowns": {
-            "ppa": 0.3298486682065506,
-            "successRate": 0.5344827586206896,
-            "explosiveness": 1.0598921882876307
-          },
-          "passingDowns": {
-            "ppa": 0.017303239464194195,
-            "successRate": 0.23076923076923078,
-            "explosiveness": 1.0751354788454355
-          },
-          "rushingPlays": {
-            "ppa": 0.1896816679076947,
-            "totalPPA": 10.622173402830903,
-            "successRate": 0.48214285714285715,
-            "explosiveness": 0.8375050020929486
-          },
-          "passingPlays": {
-            "ppa": 0.8633637362136882,
-            "totalPPA": 10.360364834564258,
-            "successRate": 0.5833333333333334,
-            "explosiveness": 1.9242041738490343
-          }
-        },
-        "defense": {
-          "plays": 51,
-          "drives": 12,
-          "ppa": -0.1438403681738571,
-          "totalPPA": -7.335858776866712,
-          "successRate": 0.3137254901960784,
-          "explosiveness": 0.533800638173952,
-          "powerSuccess": 1,
-          "stuffRate": 0.13636363636363635,
-          "lineYards": 3.140909090909091,
-          "lineYardsTotal": 69,
-          "secondLevelYards": 0.8181818181818182,
-          "secondLevelYardsTotal": 18,
-          "openFieldYards": 0.22727272727272727,
-          "openFieldYardsTotal": 5,
-          "standardDowns": {
-            "ppa": -0.2311341951750928,
-            "successRate": 0.375,
-            "explosiveness": 0.23998179321106733
-          },
-          "passingDowns": {
-            "ppa": 0.0031808141440135334,
-            "successRate": 0.21052631578947367,
-            "explosiveness": 1.4152571730626056
-          },
-          "rushingPlays": {
-            "ppa": -0.21061736840040698,
-            "totalPPA": -4.633582104808954,
-            "successRate": 0.36363636363636365,
-            "explosiveness": 0.021197065825902858
-          },
-          "passingPlays": {
-            "ppa": -0.0797369811107542,
-            "totalPPA": -2.2326354711011174,
-            "successRate": 0.2857142857142857,
-            "explosiveness": 1.046404210522001
-          }
-        }
-      }
-    ],
     "Richmond": [
       {
         "gameId": 401867988,
@@ -16496,7 +15984,265 @@
       }
     ],
     "Stevenson": [],
-    "King's": []
+    "King's": [],
+    "Villanova": [
+      {
+        "gameId": 401867989,
+        "season": 2026,
+        "seasonType": "regular",
+        "week": 1,
+        "team": "Villanova",
+        "opponent": "Bucknell",
+        "offense": {
+          "plays": 56,
+          "drives": 10,
+          "ppa": 0.09593173750588059,
+          "totalPPA": 5.372177300329313,
+          "successRate": 0.39285714285714285,
+          "explosiveness": 1.2053942704013323,
+          "powerSuccess": 0.6,
+          "stuffRate": 0.25806451612903225,
+          "lineYards": 1.696774193548387,
+          "lineYardsTotal": 53,
+          "secondLevelYards": 0.8387096774193549,
+          "secondLevelYardsTotal": 26,
+          "openFieldYards": 0.4838709677419355,
+          "openFieldYardsTotal": 15,
+          "standardDowns": {
+            "ppa": 0.11678694468018112,
+            "successRate": 0.5,
+            "explosiveness": 1.066753831140614
+          },
+          "passingDowns": {
+            "ppa": 0.05190407791569059,
+            "successRate": 0.16666666666666666,
+            "explosiveness": 2.0834503857192157
+          },
+          "rushingPlays": {
+            "ppa": -0.3065417334475963,
+            "totalPPA": -9.502793736875484,
+            "successRate": 0.2903225806451613,
+            "explosiveness": 0.4982945976202828
+          },
+          "passingPlays": {
+            "ppa": 0.6949402070749829,
+            "totalPPA": 15.288684555649626,
+            "successRate": 0.5454545454545454,
+            "explosiveness": 1.7630186075817276
+          }
+        },
+        "defense": {
+          "plays": 69,
+          "drives": 9,
+          "ppa": 0.020564496007344054,
+          "totalPPA": 1.4189502245067396,
+          "successRate": 0.37681159420289856,
+          "explosiveness": 1.1667242562354019,
+          "powerSuccess": 0.5,
+          "stuffRate": 0.18518518518518517,
+          "lineYards": 2.1703703703703705,
+          "lineYardsTotal": 59,
+          "secondLevelYards": 0.48148148148148145,
+          "secondLevelYardsTotal": 13,
+          "openFieldYards": 0.14814814814814814,
+          "openFieldYardsTotal": 4,
+          "standardDowns": {
+            "ppa": 0.019753139311680868,
+            "successRate": 0.46511627906976744,
+            "explosiveness": 1.018761891302056
+          },
+          "passingDowns": {
+            "ppa": 0.021906355157863936,
+            "successRate": 0.23076923076923078,
+            "explosiveness": 1.659932139346555
+          },
+          "rushingPlays": {
+            "ppa": -0.45187702723758033,
+            "totalPPA": -12.200679735414669,
+            "successRate": 0.2962962962962963,
+            "explosiveness": 0.44202247221759505
+          },
+          "passingPlays": {
+            "ppa": 0.32427690380765256,
+            "totalPPA": 13.619629959921408,
+            "successRate": 0.42857142857142855,
+            "explosiveness": 1.4888139380210939
+          }
+        }
+      },
+      {
+        "gameId": 401868040,
+        "season": 2026,
+        "seasonType": "regular",
+        "week": 1,
+        "team": "Villanova",
+        "opponent": "William & Mary",
+        "offense": {
+          "plays": 62,
+          "drives": 13,
+          "ppa": 0.12326419545786098,
+          "totalPPA": 7.642380118387381,
+          "successRate": 0.5,
+          "explosiveness": 1.208633827410461,
+          "powerSuccess": 0.6,
+          "stuffRate": 0.16666666666666666,
+          "lineYards": 3.12,
+          "lineYardsTotal": 94,
+          "secondLevelYards": 1.1,
+          "secondLevelYardsTotal": 33,
+          "openFieldYards": 1.3,
+          "openFieldYardsTotal": 39,
+          "standardDowns": {
+            "ppa": -0.11284438146536818,
+            "successRate": 0.5434782608695652,
+            "explosiveness": 0.8572928626477913
+          },
+          "passingDowns": {
+            "ppa": 0.8020763541121448,
+            "successRate": 0.375,
+            "explosiveness": 2.672554513921585
+          },
+          "rushingPlays": {
+            "ppa": 0.016223253485479722,
+            "totalPPA": 0.48669760456439165,
+            "successRate": 0.5,
+            "explosiveness": 1.0216269212105153
+          },
+          "passingPlays": {
+            "ppa": 0.5033280496860868,
+            "totalPPA": 14.093185391210431,
+            "successRate": 0.5357142857142857,
+            "explosiveness": 1.4119669906624495
+          }
+        },
+        "defense": {
+          "plays": 78,
+          "drives": 13,
+          "ppa": 0.10685727624542027,
+          "totalPPA": 8.334867547142782,
+          "successRate": 0.358974358974359,
+          "explosiveness": 1.3852076456287132,
+          "powerSuccess": 1,
+          "stuffRate": 0.23076923076923078,
+          "lineYards": 2.3,
+          "lineYardsTotal": 90,
+          "secondLevelYards": 0.8974358974358975,
+          "secondLevelYardsTotal": 35,
+          "openFieldYards": 1.4871794871794872,
+          "openFieldYardsTotal": 58,
+          "standardDowns": {
+            "ppa": -0.2593590597646546,
+            "successRate": 0.37777777777777777,
+            "explosiveness": 0.6599982991181222
+          },
+          "passingDowns": {
+            "ppa": 0.6062431889864315,
+            "successRate": 0.3333333333333333,
+            "explosiveness": 2.5059857265996266
+          },
+          "rushingPlays": {
+            "ppa": 0.03428552079663103,
+            "totalPPA": 1.3371353110686102,
+            "successRate": 0.41025641025641024,
+            "explosiveness": 0.8498754684630987
+          },
+          "passingPlays": {
+            "ppa": 0.18759264632252148,
+            "totalPPA": 7.128520560255816,
+            "successRate": 0.3157894736842105,
+            "explosiveness": 2.0989838818495326
+          }
+        }
+      }
+    ],
+    "Louisville": [
+      {
+        "gameId": 401856661,
+        "season": 2026,
+        "seasonType": "regular",
+        "week": 1,
+        "team": "Louisville",
+        "opponent": "Ole Miss",
+        "offense": {
+          "plays": 68,
+          "drives": 13,
+          "ppa": 0.38861896963434567,
+          "totalPPA": 26.426089935135508,
+          "successRate": 0.45588235294117646,
+          "explosiveness": 1.5103542544262112,
+          "powerSuccess": 0.8,
+          "stuffRate": 0.25,
+          "lineYards": 2.325,
+          "lineYardsTotal": 84,
+          "secondLevelYards": 1.1944444444444444,
+          "secondLevelYardsTotal": 43,
+          "openFieldYards": 2.555555555555556,
+          "openFieldYardsTotal": 92,
+          "standardDowns": {
+            "ppa": 0.3468477611613331,
+            "successRate": 0.5434782608695652,
+            "explosiveness": 1.2744137353134566
+          },
+          "passingDowns": {
+            "ppa": 0.4759587691688266,
+            "successRate": 0.2727272727272727,
+            "explosiveness": 2.4934397507293555
+          },
+          "rushingPlays": {
+            "ppa": 0.31652127792501844,
+            "totalPPA": 11.394766005300664,
+            "successRate": 0.5,
+            "explosiveness": 1.155917369606515
+          },
+          "passingPlays": {
+            "ppa": 0.4697288728073389,
+            "totalPPA": 15.031323929834844,
+            "successRate": 0.40625,
+            "explosiveness": 2.0011130180227137
+          }
+        },
+        "defense": {
+          "plays": 80,
+          "drives": 13,
+          "ppa": 0.2976736148603684,
+          "totalPPA": 23.81388918882947,
+          "successRate": 0.4625,
+          "explosiveness": 1.3097367268750522,
+          "powerSuccess": 0.6363636363636364,
+          "stuffRate": 0.14285714285714285,
+          "lineYards": 3.0833333333333335,
+          "lineYardsTotal": 130,
+          "secondLevelYards": 0.7142857142857143,
+          "secondLevelYardsTotal": 30,
+          "openFieldYards": 0.19047619047619047,
+          "openFieldYardsTotal": 8,
+          "standardDowns": {
+            "ppa": 0.3141235462247612,
+            "successRate": 0.5689655172413793,
+            "explosiveness": 1.0868313491787553
+          },
+          "passingDowns": {
+            "ppa": 0.25430561399060564,
+            "successRate": 0.18181818181818182,
+            "explosiveness": 3.1487060928695008
+          },
+          "rushingPlays": {
+            "ppa": 0.12674680090232018,
+            "totalPPA": 5.323365637897448,
+            "successRate": 0.5238095238095238,
+            "explosiveness": 0.7393265394831856
+          },
+          "passingPlays": {
+            "ppa": 0.5351104502053422,
+            "totalPPA": 18.728865757186977,
+            "successRate": 0.4,
+            "explosiveness": 2.2758357303353054
+          }
+        }
+      }
+    ],
+    "St. John Fisher": [],
+    "St. Lawrence": []
   },
   "games": [
     {
@@ -16514,6 +16260,26 @@
         {
           "team": "Oberlin",
           "opponent": "Denison",
+          "homeAway": "away",
+          "players": []
+        }
+      ]
+    },
+    {
+      "gameId": 401906516,
+      "startDate": "2026-09-10T23:00:00.000Z",
+      "homeTeam": "Northwestern (OK)",
+      "awayTeam": "Arkansas Tech",
+      "teams": [
+        {
+          "team": "Northwestern (OK)",
+          "opponent": "Arkansas Tech",
+          "homeAway": "home",
+          "players": []
+        },
+        {
+          "team": "Arkansas Tech",
+          "opponent": "Northwestern (OK)",
           "homeAway": "away",
           "players": []
         }
@@ -16540,20 +16306,20 @@
       ]
     },
     {
-      "gameId": 401906516,
-      "startDate": "2026-09-10T23:00:00.000Z",
-      "homeTeam": "Northwestern (OK)",
-      "awayTeam": "Arkansas Tech",
+      "gameId": 401906527,
+      "startDate": "2026-09-11T00:00:00.000Z",
+      "homeTeam": "East Central",
+      "awayTeam": "Arkansas Monticello",
       "teams": [
         {
-          "team": "Northwestern (OK)",
-          "opponent": "Arkansas Tech",
+          "team": "East Central",
+          "opponent": "Arkansas Monticello",
           "homeAway": "home",
           "players": []
         },
         {
-          "team": "Arkansas Tech",
-          "opponent": "Northwestern (OK)",
+          "team": "Arkansas Monticello",
+          "opponent": "East Central",
           "homeAway": "away",
           "players": []
         }
@@ -17564,20 +17330,1040 @@
       ]
     },
     {
-      "gameId": 401906527,
-      "startDate": "2026-09-11T00:00:00.000Z",
-      "homeTeam": "East Central",
-      "awayTeam": "Arkansas Monticello",
+      "gameId": 401858222,
+      "startDate": "2026-09-11T23:00:00.000Z",
+      "homeTeam": "NC State",
+      "awayTeam": "Richmond",
       "teams": [
         {
-          "team": "East Central",
-          "opponent": "Arkansas Monticello",
+          "team": "NC State",
+          "opponent": "Richmond",
+          "homeAway": "home",
+          "players": [
+            {
+              "playerId": "5079301",
+              "name": "CJ Bailey",
+              "category": "passing",
+              "seasonStats": {
+                "TD": 0.0,
+                "YDS": 84.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "C/ATT",
+                  "stat": "12/23"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "YDS",
+                  "stat": "84"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "AVG",
+                  "stat": "3.7"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "INT",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "QBR",
+                  "stat": "39.5"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "CAR",
+                  "stat": "10"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "YDS",
+                  "stat": "33"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "AVG",
+                  "stat": "3.3"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "LONG",
+                  "stat": "13"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "fumbles",
+                  "statType": "FUM",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "fumbles",
+                  "statType": "LOST",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "fumbles",
+                  "statType": "REC",
+                  "stat": "0"
+                }
+              ]
+            },
+            {
+              "playerId": "5079301",
+              "name": "CJ Bailey",
+              "category": "rushing",
+              "seasonStats": {
+                "YDS": 33.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "C/ATT",
+                  "stat": "12/23"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "YDS",
+                  "stat": "84"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "AVG",
+                  "stat": "3.7"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "INT",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "QBR",
+                  "stat": "39.5"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "CAR",
+                  "stat": "10"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "YDS",
+                  "stat": "33"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "AVG",
+                  "stat": "3.3"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "LONG",
+                  "stat": "13"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "fumbles",
+                  "statType": "FUM",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "fumbles",
+                  "statType": "LOST",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "fumbles",
+                  "statType": "REC",
+                  "stat": "0"
+                }
+              ]
+            },
+            {
+              "playerId": "5148611",
+              "name": "Will Wilson",
+              "category": "rushing",
+              "seasonStats": {
+                "YDS": 21.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "C/ATT",
+                  "stat": "3/4"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "YDS",
+                  "stat": "8"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "AVG",
+                  "stat": "2.0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "INT",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "passing",
+                  "statType": "QBR",
+                  "stat": "82.2"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "CAR",
+                  "stat": "6"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "YDS",
+                  "stat": "21"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "AVG",
+                  "stat": "3.5"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "TD",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "rushing",
+                  "statType": "LONG",
+                  "stat": "7"
+                }
+              ]
+            },
+            {
+              "playerId": "5201877",
+              "name": "Vander Ploog",
+              "category": "receiving",
+              "seasonStats": {
+                "REC": 2.0,
+                "YDS": 25.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "25"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "12.5"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "21"
+                }
+              ]
+            },
+            {
+              "playerId": "5079745",
+              "name": "Joshisa Trader",
+              "category": "receiving",
+              "seasonStats": {
+                "REC": 2.0,
+                "YDS": 19.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "19"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "9.5"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "14"
+                }
+              ]
+            },
+            {
+              "playerId": "5080819",
+              "name": "Davion Dozier",
+              "category": "receiving",
+              "seasonStats": {
+                "REC": 2.0,
+                "YDS": 14.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "14"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "7.0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401858202,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Richmond",
+          "opponent": "NC State",
+          "homeAway": "away",
+          "players": [
+            {
+              "playerId": "5083373",
+              "name": "Ashten Snelsire",
+              "category": "passing",
+              "seasonStats": {
+                "TD": 6.0,
+                "YDS": 460.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401867988,
+                  "category": "passing",
+                  "statType": "C/ATT",
+                  "stat": "17/28"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "passing",
+                  "statType": "YDS",
+                  "stat": "199"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "passing",
+                  "statType": "AVG",
+                  "stat": "7.1"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "passing",
+                  "statType": "TD",
+                  "stat": "3"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "passing",
+                  "statType": "INT",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "CAR",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "YDS",
+                  "stat": "4"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "AVG",
+                  "stat": "2.0"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "LONG",
+                  "stat": "4"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "passing",
+                  "statType": "C/ATT",
+                  "stat": "19/35"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "passing",
+                  "statType": "YDS",
+                  "stat": "261"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "passing",
+                  "statType": "AVG",
+                  "stat": "7.5"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "passing",
+                  "statType": "TD",
+                  "stat": "3"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "passing",
+                  "statType": "INT",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "CAR",
+                  "stat": "7"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "YDS",
+                  "stat": "-37"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "AVG",
+                  "stat": "-5.3"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "LONG",
+                  "stat": "5"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "fumbles",
+                  "statType": "FUM",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "fumbles",
+                  "statType": "LOST",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "fumbles",
+                  "statType": "REC",
+                  "stat": "0"
+                }
+              ]
+            },
+            {
+              "playerId": "5153983",
+              "name": "Aziz Foster-Powell",
+              "category": "rushing",
+              "seasonStats": {
+                "YDS": 142.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "CAR",
+                  "stat": "15"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "YDS",
+                  "stat": "108"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "AVG",
+                  "stat": "7.2"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "TD",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "LONG",
+                  "stat": "33"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "38"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "19.0"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "26"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "fumbles",
+                  "statType": "FUM",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "fumbles",
+                  "statType": "LOST",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "fumbles",
+                  "statType": "REC",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "CAR",
+                  "stat": "10"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "YDS",
+                  "stat": "34"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "AVG",
+                  "stat": "3.4"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "TD",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "LONG",
+                  "stat": "9"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "42"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "21.0"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "33"
+                }
+              ]
+            },
+            {
+              "playerId": "5153977",
+              "name": "Jamaal Brown",
+              "category": "rushing",
+              "seasonStats": {
+                "YDS": 80.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "CAR",
+                  "stat": "8"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "YDS",
+                  "stat": "44"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "AVG",
+                  "stat": "5.5"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "rushing",
+                  "statType": "LONG",
+                  "stat": "16"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "CAR",
+                  "stat": "9"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "YDS",
+                  "stat": "36"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "AVG",
+                  "stat": "4.0"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "rushing",
+                  "statType": "LONG",
+                  "stat": "18"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "kickReturns",
+                  "statType": "NO",
+                  "stat": "3"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "kickReturns",
+                  "statType": "YDS",
+                  "stat": "38"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "kickReturns",
+                  "statType": "AVG",
+                  "stat": "12.7"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "kickReturns",
+                  "statType": "LONG",
+                  "stat": "17"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "kickReturns",
+                  "statType": "TD",
+                  "stat": "0"
+                }
+              ]
+            },
+            {
+              "playerId": "5402260",
+              "name": "Bryce Allen",
+              "category": "receiving",
+              "seasonStats": {
+                "REC": 7.0,
+                "YDS": 143.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "4"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "106"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "26.5"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "75"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "3"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "37"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "12.3"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "15"
+                }
+              ]
+            },
+            {
+              "playerId": "5083372",
+              "name": "Quanye Veney",
+              "category": "receiving",
+              "seasonStats": {
+                "REC": 6.0,
+                "YDS": 111.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "3"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "38"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "12.7"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "17"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "3"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "73"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "24.3"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "42"
+                }
+              ]
+            },
+            {
+              "playerId": "5083381",
+              "name": "Sean Clarke",
+              "category": "receiving",
+              "seasonStats": {
+                "REC": 9.0,
+                "YDS": 83.0
+              },
+              "gameLog": [
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "2"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "3"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "1.5"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "0"
+                },
+                {
+                  "gameId": 401867988,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "3"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "REC",
+                  "stat": "7"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "YDS",
+                  "stat": "80"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "AVG",
+                  "stat": "11.4"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "TD",
+                  "stat": "1"
+                },
+                {
+                  "gameId": 401869127,
+                  "category": "receiving",
+                  "statType": "LONG",
+                  "stat": "29"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": 401908202,
+      "startDate": "2026-09-11T23:00:00.000Z",
+      "homeTeam": "King's",
+      "awayTeam": "Stevenson",
+      "teams": [
+        {
+          "team": "King's",
+          "opponent": "Stevenson",
           "homeAway": "home",
           "players": []
         },
         {
-          "team": "Arkansas Monticello",
-          "opponent": "East Central",
+          "team": "Stevenson",
+          "opponent": "King's",
           "homeAway": "away",
           "players": []
         }
@@ -18832,2066 +19618,20 @@
       ]
     },
     {
-      "gameId": 401858220,
+      "gameId": 401908691,
       "startDate": "2026-09-11T23:00:00.000Z",
-      "homeTeam": "Virginia",
-      "awayTeam": "Norfolk State",
+      "homeTeam": "St. Lawrence",
+      "awayTeam": "St. John Fisher",
       "teams": [
         {
-          "team": "Virginia",
-          "opponent": "Norfolk State",
-          "homeAway": "home",
-          "players": [
-            {
-              "playerId": "4685696",
-              "name": "Beau Pribula",
-              "category": "passing",
-              "seasonStats": {
-                "TD": 2.0,
-                "YDS": 155.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "9/11"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "155"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "14.1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "QBR",
-                  "stat": "97.4"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "15"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "110"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "7.3"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "22"
-                }
-              ]
-            },
-            {
-              "playerId": "4685696",
-              "name": "Beau Pribula",
-              "category": "rushing",
-              "seasonStats": {
-                "YDS": 110.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "9/11"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "155"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "14.1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "QBR",
-                  "stat": "97.4"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "15"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "110"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "7.3"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "22"
-                }
-              ]
-            },
-            {
-              "playerId": "5121721",
-              "name": "Jekail Middlebrook",
-              "category": "rushing",
-              "seasonStats": {
-                "YDS": 64.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "15"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "64"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "4.3"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "15"
-                }
-              ]
-            },
-            {
-              "playerId": "4873442",
-              "name": "Xavier Brown",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 2.0,
-                "YDS": 58.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "8"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "40"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "5.0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "15"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "58"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "29.0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "45"
-                }
-              ]
-            },
-            {
-              "playerId": "5222394",
-              "name": "Dashawn Martin",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 1.0,
-                "YDS": 47.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "47"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "47.0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "47"
-                }
-              ]
-            },
-            {
-              "playerId": "5085246",
-              "name": "Tylyric Coleman",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 2.0,
-                "YDS": 31.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "31"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "15.5"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "20"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "team": "Norfolk State",
-          "opponent": "Virginia",
-          "homeAway": "away",
-          "players": [
-            {
-              "playerId": "5150426",
-              "name": "Deljay Bailey",
-              "category": "passing",
-              "seasonStats": {
-                "TD": 3.0,
-                "YDS": 213.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "13/20"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "119"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "6.0"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "5"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "56"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "11.2"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "20"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "14/20"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "94"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "4.7"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "21"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "12"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "0.6"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "30"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "fumbles",
-                  "statType": "FUM",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "fumbles",
-                  "statType": "LOST",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "fumbles",
-                  "statType": "REC",
-                  "stat": "0"
-                }
-              ]
-            },
-            {
-              "playerId": "5093197",
-              "name": "Jalyn Daniels",
-              "category": "rushing",
-              "seasonStats": {
-                "YDS": 188.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "15"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "104"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "6.9"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "28"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "3.0"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "11"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "84"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "7.6"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "35"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "8"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "4.0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "6"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "fumbles",
-                  "statType": "FUM",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "fumbles",
-                  "statType": "LOST",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "fumbles",
-                  "statType": "REC",
-                  "stat": "0"
-                }
-              ]
-            },
-            {
-              "playerId": "5150426",
-              "name": "Deljay Bailey",
-              "category": "rushing",
-              "seasonStats": {
-                "YDS": 68.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "13/20"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "119"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "6.0"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "5"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "56"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "11.2"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "20"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "14/20"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "94"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "4.7"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "21"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "12"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "0.6"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "30"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "fumbles",
-                  "statType": "FUM",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "fumbles",
-                  "statType": "LOST",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "fumbles",
-                  "statType": "REC",
-                  "stat": "0"
-                }
-              ]
-            },
-            {
-              "playerId": "4920147",
-              "name": "Paul Billups II",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 9.0,
-                "YDS": 64.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "15"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "7.5"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "10"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "7"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "49"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "7.0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "11"
-                }
-              ]
-            },
-            {
-              "playerId": "5155995",
-              "name": "Elyjah Mitchell",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 6.0,
-                "YDS": 59.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "5"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "50"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "10.0"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "16"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "9"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "9.0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "9"
-                }
-              ]
-            },
-            {
-              "playerId": "5410232",
-              "name": "Brevin Caldwell",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 5.0,
-                "YDS": 50.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "4"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "41"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "10.3"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867972,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "17"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "9"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "9.0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867973,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "9"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "gameId": 401858222,
-      "startDate": "2026-09-11T23:00:00.000Z",
-      "homeTeam": "NC State",
-      "awayTeam": "Richmond",
-      "teams": [
-        {
-          "team": "NC State",
-          "opponent": "Richmond",
-          "homeAway": "home",
-          "players": [
-            {
-              "playerId": "5079301",
-              "name": "CJ Bailey",
-              "category": "passing",
-              "seasonStats": {
-                "TD": 0.0,
-                "YDS": 84.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "12/23"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "84"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "3.7"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "QBR",
-                  "stat": "39.5"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "10"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "33"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "3.3"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "13"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "fumbles",
-                  "statType": "FUM",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "fumbles",
-                  "statType": "LOST",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "fumbles",
-                  "statType": "REC",
-                  "stat": "0"
-                }
-              ]
-            },
-            {
-              "playerId": "5079301",
-              "name": "CJ Bailey",
-              "category": "rushing",
-              "seasonStats": {
-                "YDS": 33.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "12/23"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "84"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "3.7"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "QBR",
-                  "stat": "39.5"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "10"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "33"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "3.3"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "13"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "fumbles",
-                  "statType": "FUM",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "fumbles",
-                  "statType": "LOST",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "fumbles",
-                  "statType": "REC",
-                  "stat": "0"
-                }
-              ]
-            },
-            {
-              "playerId": "5148611",
-              "name": "Will Wilson",
-              "category": "rushing",
-              "seasonStats": {
-                "YDS": 21.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "3/4"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "8"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "2.0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "passing",
-                  "statType": "QBR",
-                  "stat": "82.2"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "6"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "21"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "3.5"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "7"
-                }
-              ]
-            },
-            {
-              "playerId": "5201877",
-              "name": "Vander Ploog",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 2.0,
-                "YDS": 25.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "25"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "12.5"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "21"
-                }
-              ]
-            },
-            {
-              "playerId": "5079745",
-              "name": "Joshisa Trader",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 2.0,
-                "YDS": 19.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "19"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "9.5"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "14"
-                }
-              ]
-            },
-            {
-              "playerId": "5080819",
-              "name": "Davion Dozier",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 2.0,
-                "YDS": 14.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "14"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "7.0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401858202,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "12"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "team": "Richmond",
-          "opponent": "NC State",
-          "homeAway": "away",
-          "players": [
-            {
-              "playerId": "5083373",
-              "name": "Ashten Snelsire",
-              "category": "passing",
-              "seasonStats": {
-                "TD": 6.0,
-                "YDS": 460.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867988,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "17/28"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "199"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "7.1"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "4"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "2.0"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "4"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "passing",
-                  "statType": "C/ATT",
-                  "stat": "19/35"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "passing",
-                  "statType": "YDS",
-                  "stat": "261"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "passing",
-                  "statType": "AVG",
-                  "stat": "7.5"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "passing",
-                  "statType": "TD",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "passing",
-                  "statType": "INT",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "7"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "-37"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "-5.3"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "5"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "fumbles",
-                  "statType": "FUM",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "fumbles",
-                  "statType": "LOST",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "fumbles",
-                  "statType": "REC",
-                  "stat": "0"
-                }
-              ]
-            },
-            {
-              "playerId": "5153983",
-              "name": "Aziz Foster-Powell",
-              "category": "rushing",
-              "seasonStats": {
-                "YDS": 142.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "15"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "108"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "7.2"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "33"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "38"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "19.0"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "26"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "fumbles",
-                  "statType": "FUM",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "fumbles",
-                  "statType": "LOST",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "fumbles",
-                  "statType": "REC",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "10"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "34"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "3.4"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "9"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "42"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "21.0"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "33"
-                }
-              ]
-            },
-            {
-              "playerId": "5153977",
-              "name": "Jamaal Brown",
-              "category": "rushing",
-              "seasonStats": {
-                "YDS": 80.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "8"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "44"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "5.5"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "16"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "CAR",
-                  "stat": "9"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "YDS",
-                  "stat": "36"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "AVG",
-                  "stat": "4.0"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "rushing",
-                  "statType": "LONG",
-                  "stat": "18"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "kickReturns",
-                  "statType": "NO",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "kickReturns",
-                  "statType": "YDS",
-                  "stat": "38"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "kickReturns",
-                  "statType": "AVG",
-                  "stat": "12.7"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "kickReturns",
-                  "statType": "LONG",
-                  "stat": "17"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "kickReturns",
-                  "statType": "TD",
-                  "stat": "0"
-                }
-              ]
-            },
-            {
-              "playerId": "5402260",
-              "name": "Bryce Allen",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 7.0,
-                "YDS": 143.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "4"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "106"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "26.5"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "75"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "37"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "12.3"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "15"
-                }
-              ]
-            },
-            {
-              "playerId": "5083372",
-              "name": "Quanye Veney",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 6.0,
-                "YDS": 111.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "38"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "12.7"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "17"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "73"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "24.3"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "42"
-                }
-              ]
-            },
-            {
-              "playerId": "5083381",
-              "name": "Sean Clarke",
-              "category": "receiving",
-              "seasonStats": {
-                "REC": 9.0,
-                "YDS": 83.0
-              },
-              "gameLog": [
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "2"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "1.5"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "0"
-                },
-                {
-                  "gameId": 401867988,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "3"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "REC",
-                  "stat": "7"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "YDS",
-                  "stat": "80"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "AVG",
-                  "stat": "11.4"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "TD",
-                  "stat": "1"
-                },
-                {
-                  "gameId": 401869127,
-                  "category": "receiving",
-                  "statType": "LONG",
-                  "stat": "29"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "gameId": 401908202,
-      "startDate": "2026-09-11T23:00:00.000Z",
-      "homeTeam": "King's",
-      "awayTeam": "Stevenson",
-      "teams": [
-        {
-          "team": "King's",
-          "opponent": "Stevenson",
+          "team": "St. Lawrence",
+          "opponent": "St. John Fisher",
           "homeAway": "home",
           "players": []
         },
         {
-          "team": "Stevenson",
-          "opponent": "King's",
+          "team": "St. John Fisher",
+          "opponent": "St. Lawrence",
           "homeAway": "away",
           "players": []
         }
