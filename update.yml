@@ -1,0 +1,52 @@
+name: Update CFB Prop Projections
+
+on:
+  schedule:
+    # Twice a day. Times are UTC — 12:00 UTC ≈ 8am ET, 00:00 UTC ≈ 8pm ET
+    # (shifts an hour with daylight saving). Adjust to taste.
+    - cron: "0 12 * * *"
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/update.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch raw stats
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python scripts/fetch_data.py
+
+      - name: Compute projections
+        run: python scripts/compute_projections.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "cfb-prop-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data/raw.json docs/data/projections.json
+          if git diff --cached --quiet; then
+            echo "No data changes — skipping commit."
+          else
+            git commit -m "Update projections ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi

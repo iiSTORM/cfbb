@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #0F1611;
+  --panel: #16211A;
+  --panel-alt: #1C2921;
+  --line: #2A3830;
+  --chalk: #F2EFE6;
+  --chalk-dim: #9BAA9E;
+  --green: #3ECB6F;
+  --red: #E8543A;
+  --gold: #D9A62C;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--chalk);
+  font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.display {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+a { color: inherit; }
+
+/* ---------- Shell layout ---------- */
+
+.shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  padding: 24px 0;
+  overflow-y: auto;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-header {
+  padding: 0 20px 16px 20px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 8px;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sidebar-sub {
+  font-size: 12px;
+  color: var(--chalk-dim);
+  margin-top: 4px;
+}
+
+.main {
+  flex: 1;
+  padding: 32px 40px;
+  min-width: 0;
+}
+
+/* ---------- Yard-line divider ---------- */
+
+.yard-tick {
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    90deg, var(--line) 0, var(--line) 6px, transparent 6px, transparent 12px
+  );
+  margin: 0 20px;
+}
+
+/* ---------- Matchup list ---------- */
+
+.matchup-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--chalk);
+  padding: 14px 20px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.matchup-item:hover { background: var(--panel-alt); }
+.matchup-item.active { background: var(--panel-alt); border-left: 3px solid var(--green); padding-left: 17px; }
+
+.matchup-teams {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.matchup-date {
+  font-size: 11px;
+  color: var(--chalk-dim);
+  margin-top: 3px;
+}
+
+/* ---------- Header ---------- */
+
+.report-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.report-title {
+  font-size: 32px;
+}
+
+.report-meta {
+  color: var(--chalk-dim);
+  font-size: 13px;
+}
+
+/* ---------- Team section ---------- */
+
+.team-block {
+  margin-bottom: 40px;
+}
+
+.team-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.team-name {
+  font-size: 22px;
+}
+
+.vs-opponent {
+  color: var(--chalk-dim);
+  font-size: 14px;
+}
+
+/* ---------- Player row (scouting report style, no cards) ---------- */
+
+.player-row {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.player-row:last-child { border-bottom: none; }
+
+.player-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.player-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.player-stat-label {
+  color: var(--chalk-dim);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 2px;
+}
+
+.projected-figure {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.projected-number {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.projected-caption {
+  font-size: 11px;
+  color: var(--chalk-dim);
+  margin-top: 4px;
+}
+
+/* ---------- Badges ---------- */
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge-favorable { background: rgba(62, 203, 111, 0.15); color: var(--green); }
+.badge-tough { background: rgba(232, 84, 58, 0.15); color: var(--red); }
+.badge-neutral { background: rgba(155, 170, 158, 0.15); color: var(--chalk-dim); }
+
+.badge-conf-high { color: var(--green); }
+.badge-conf-medium { color: var(--gold); }
+.badge-conf-low { color: var(--chalk-dim); }
+
+/* ---------- SVG game log visualization ---------- */
+
+.game-log-viz {
+  margin-top: 4px;
+}
+
+.game-log-svg {
+  width: 100%;
+  height: 46px;
+  display: block;
+}
+
+.viz-legend {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  color: var(--chalk-dim);
+  margin-top: 6px;
+}
+
+.viz-legend-item { display: flex; align-items: center; gap: 5px; }
+
+.legend-swatch {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ---------- Matchup explainer ---------- */
+
+.matchup-note {
+  font-size: 12px;
+  color: var(--chalk-dim);
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* ---------- Empty / loading states ---------- */
+
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--chalk-dim);
+}
+
+.empty-state-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: var(--chalk);
+  margin-bottom: 8px;
+}
+
+/* ---------- Footer disclaimer ---------- */
+
+.footer-note {
+  margin-top: 48px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  color: var(--chalk-dim);
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 860px) {
+  .shell { flex-direction: column; }
+  .sidebar {
+    width: 100%;
+    position: relative;
+    max-height: none;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .main { padding: 24px 20px; }
+}
+
+/* ---------- Reduced motion / focus ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+.matchup-item:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: -2px;
+}
