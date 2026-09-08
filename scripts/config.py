@@ -48,13 +48,19 @@ TOP_PLAYERS_PER_CATEGORY = {
     "passing": 1,
     "rushing": 2,
     "receiving": 3,
+    "defensive": 3,
 }
 
 # category -> (statType key from CFBD, human label, position filter hint)
+# "defensive" statType names are the least verified of this set — CFBD's
+# /stats/player/season "defensive" category has historically used TOT
+# (total tackles) and SACKS, but double-check a real raw.json against
+# current docs before trusting this category specifically.
 STAT_TARGETS = {
     "passing": [("YDS", "Passing Yards"), ("TD", "Passing TDs")],
     "rushing": [("YDS", "Rushing Yards")],
     "receiving": [("YDS", "Receiving Yards"), ("REC", "Receptions")],
+    "defensive": [("TOT", "Total Tackles"), ("SACKS", "Sacks")],
 }
 
 # Which positions are plausible for a "leader" in each category. Season
@@ -69,17 +75,35 @@ ALLOWED_POSITIONS_BY_CATEGORY = {
     "passing": {"QB"},
     "rushing": {"RB", "QB", "FB", "WR"},
     "receiving": {"WR", "TE", "RB", "FB"},
+    "defensive": {"LB", "DL", "DE", "DT", "CB", "S", "DB", "EDGE", "NT"},
 }
 
-# Which advanced-defense field each offensive category is matched
-# against when computing the matchup factor. All are successRate
-# fields (bounded 0-1), which is more stable for ratio math than raw
-# PPA (which can be negative). This is a transparent heuristic, not a
-# claim of predictive precision — see README.
+# Which advanced-stats field each category is matched against when
+# computing the matchup factor.
+#
+# For offensive categories, this looks at the OPPONENT's defense —
+# how well they defend that play type. For "defensive" (a defensive
+# player's own tackles/sacks), the logic flips: what matters is how
+# leaky the OPPONENT's offensive line is, not the opponent's defense
+# (a defensive player isn't playing against a defense). So this one
+# points at the opponent's "offense" section instead — specifically
+# offense.havoc.total, which measures how often opponents created
+# disruptive plays (TFLs, sacks, forced fumbles) AGAINST that team's
+# offense. A leaky offensive line there means more opportunities for
+# whichever defender we're projecting here. Same opponent_value() /
+# league_average() / recent_defense_value() functions handle this
+# transparently since they're just generic (section, subfield, metric)
+# path lookups — "defense" isn't hardcoded anywhere in that traversal.
+#
+# All fields here are successRate-style (bounded, roughly 0-1ish),
+# which is more stable for ratio math than raw PPA (which can be
+# negative). This is a transparent heuristic, not a claim of
+# predictive precision — see README.
 MATCHUP_FACTOR_FIELD = {
     "passing": ("defense", "passingPlays", "successRate"),
     "rushing": ("defense", "rushingPlays", "successRate"),
     "receiving": ("defense", "passingPlays", "successRate"),  # receiving yards ride on the pass defense
+    "defensive": ("offense", "havoc", "total"),  # opponent's O-line leakiness, not their defense
 }
 
 # Recent-form window for the game log (most recent N games)

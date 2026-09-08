@@ -82,7 +82,7 @@ function generateCSV(data) {
   const headers = [
     "team", "opponent", "homeAway", "player", "category", "label",
     "seasonAvg", "recentAvg", "projected", "matchupFactor", "confidence",
-    "opponentRank", "totalTeamsRanked", "gameStartDate",
+    "opponentRank", "totalTeamsRanked", "sportsbookLine", "edge", "gameStartDate",
   ];
   const rows = [headers.join(",")];
 
@@ -93,7 +93,7 @@ function generateCSV(data) {
           [
             t.team, t.opponent, t.homeAway ?? "", p.name, p.category, p.label,
             p.seasonAvg ?? "", p.recentAvg ?? "", p.projected ?? "", p.matchupFactor ?? "", p.confidence ?? "",
-            p.opponentRank ?? "", p.totalTeamsRanked ?? "", game.startDate ?? "",
+            p.opponentRank ?? "", p.totalTeamsRanked ?? "", p.sportsbookLine ?? "", p.edge ?? "", game.startDate ?? "",
           ]
             .map(csvEscape)
             .join(",")
@@ -357,6 +357,7 @@ function renderPlayerRow(p) {
   const badge = matchupBadge(p.matchupFactor);
   const confCls = confidenceClass(p.confidence);
   const svg = buildGameLogSVG(p.recentGames || [], p.projected);
+  const lineHtml = renderSportsbookLine(p);
 
   return `
     <div class="player-row">
@@ -370,6 +371,7 @@ function renderPlayerRow(p) {
           <div class="projected-caption">projected</div>
         </div>
       </div>
+      ${lineHtml}
       <div class="game-log-viz">
         ${svg}
         <div class="viz-legend">
@@ -402,6 +404,22 @@ function ordinal(n) {
   const s = ["th", "st", "nd", "rd"];
   const v = n % 100;
   return n + (s[(v - 20) % 10] || s[v] || s[0]);
+}
+
+// Sportsbook line data is optional (only present if fetch_odds.py ran
+// with a key configured, and only for players it found a matching
+// line for) — renders nothing at all when absent, rather than an
+// empty/placeholder row.
+function renderSportsbookLine(p) {
+  if (p.sportsbookLine == null) return "";
+  const edgeColor = p.edge > 0 ? "var(--green)" : p.edge < 0 ? "var(--red)" : "var(--chalk-dim)";
+  const edgeSign = p.edge > 0 ? "+" : "";
+  return `
+    <div class="row" style="margin-bottom:10px;">
+      <span class="label">Sportsbook line (${p.sportsbookBook ?? "book"})</span>
+      <span class="outcome">${p.sportsbookLine} <span style="color:${edgeColor}">(${edgeSign}${p.edge} edge)</span></span>
+    </div>
+  `;
 }
 
 function renderMain(game) {
@@ -445,6 +463,43 @@ function renderMain(game) {
   `;
 }
 
+function renderTrackRecord(summary) {
+  const el = document.getElementById("track-record");
+  if (!summary || summary.settledCount === 0) {
+    el.innerHTML = "";
+    return;
+  }
+
+  const confRows = Object.entries(summary.byConfidence || {})
+    .map(([level, stat]) => `<div class="track-record-stat"><span>${level} conf. (n=${stat.count})</span><span class="value">${stat.meanAbsError} avg error</span></div>`)
+    .join("");
+
+  el.innerHTML = `
+    <div class="track-record">
+      <div class="track-record-title">Track Record</div>
+      <div class="track-record-stat"><span>Graded projections</span><span class="value">${summary.settledCount}</span></div>
+      <div class="track-record-stat"><span>Mean absolute error</span><span class="value">${summary.meanAbsError}</span></div>
+      <div class="track-record-stat"><span>Bias (+ = under-projects)</span><span class="value">${summary.meanError > 0 ? "+" : ""}${summary.meanError}</span></div>
+      ${confRows}
+      <div class="track-record-note">
+        ${summary.pendingCount} projection(s) awaiting results${summary.assumedZeroCount ? `, ${summary.assumedZeroCount} settled via a no-data-found assumption (excluded above)` : ""}.
+      </div>
+    </div>
+  `;
+}
+
+async function loadAccuracySummary() {
+  try {
+    const res = await fetch("data/accuracy_summary.json", { cache: "no-store" });
+    if (!res.ok) return; // fine if it doesn't exist yet — nothing settled so far
+    const summary = await res.json();
+    renderTrackRecord(summary);
+  } catch (e) {
+    // Track record is a bonus panel, not core functionality — fail silently
+    console.warn("Could not load accuracy_summary.json", e);
+  }
+}
+
 function initControls() {
   const searchInput = document.getElementById("player-search");
   searchInput.addEventListener("input", () => {
@@ -457,3 +512,4 @@ function initControls() {
 
 initControls();
 loadData();
+loadAccuracySummary();

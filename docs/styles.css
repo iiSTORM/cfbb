@@ -438,3 +438,37 @@ button:focus-visible {
   padding: 0;
   text-decoration: underline;
 }
+
+/* ---------- Track Record panel ---------- */
+
+.track-record {
+  margin: 20px;
+  padding: 14px;
+  background: var(--panel-alt);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+
+.track-record-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--chalk-dim);
+  margin-bottom: 10px;
+}
+
+.track-record-stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 3px 0;
+}
+
+.track-record-stat .value { font-weight: 600; }
+
+.track-record-note {
+  font-size: 11px;
+  color: var(--chalk-dim);
+  margin-top: 8px;
+  line-height: 1.4;
+}
