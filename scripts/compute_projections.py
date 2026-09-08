@@ -85,6 +85,27 @@ def opponent_value(advanced_by_team, opponent, field_path):
         return None
 
 
+def recent_defense_value(recent_defense_games, field_path, window):
+    """Average of a nested field across the opponent's last `window`
+    games (list is expected oldest-to-newest, as fetch_data.py sorts
+    it). Returns None if there's no usable per-game data — callers
+    should fall back to the season-long value in that case, not treat
+    None as zero."""
+    section, subfield, metric = field_path
+    recent = recent_defense_games[-window:] if recent_defense_games else []
+    values = []
+    for game in recent:
+        try:
+            v = game[section][subfield][metric]
+            if v is not None:
+                values.append(float(v))
+        except (KeyError, TypeError, ValueError):
+            continue
+    if not values:
+        return None
+    return sum(values) / len(values)
+
+
 def extract_game_values(game_log, category, stat_type):
     """Pull the numeric values for one stat type out of a player's game log,
     most recent last. CFBD's /stats/player/game shape has shifted between
@@ -142,7 +163,7 @@ def confidence_label(recent_games):
     return "Low"
 
 
-def build_projection(player, category, stat_type, label, opponent, advanced_by_team):
+def build_projection(player, category, stat_type, label, opponent, advanced_by_team, recent_defense_by_team):
     game_values_all = extract_game_values(player["gameLog"], category, stat_type)
     recent_games = game_values_all[-config.RECENT_GAMES_WINDOW:]
 
@@ -159,18 +180,36 @@ def build_projection(player, category, stat_type, label, opponent, advanced_by_t
     blended_base = config.RECENT_WEIGHT * recent_avg + config.SEASON_WEIGHT * base_season_avg
 
     field_path = config.MATCHUP_FACTOR_FIELD[category]
-    opp_val = opponent_value(advanced_by_team, opponent, field_path)
+    season_defense_val = opponent_value(advanced_by_team, opponent, field_path)
+    recent_defense_val = recent_defense_value(
+        recent_defense_by_team.get(opponent, []), field_path, config.DEF_RECENT_GAMES_WINDOW
+    )
     league_avg = league_average(advanced_by_team, field_path)
 
-    if opp_val is not None and league_avg not in (None, 0):
-        raw_factor = opp_val / league_avg
+    # Blend recent defensive form with the season-long number when both
+    # are available; fall back to whichever one we have; no adjustment
+    # at all if neither is available (matchup_factor stays 1.0 rather
+    # than guessing).
+    if recent_defense_val is not None and season_defense_val is not None:
+        blended_defense_val = config.DEF_RECENT_WEIGHT * recent_defense_val + config.DEF_SEASON_WEIGHT * season_defense_val
+    elif season_defense_val is not None:
+        blended_defense_val = season_defense_val
+    else:
+        blended_defense_val = recent_defense_val  # may still be None
+
+    if blended_defense_val is not None and league_avg not in (None, 0):
+        raw_factor = blended_defense_val / league_avg
         matchup_factor = max(config.MATCHUP_FACTOR_MIN, min(config.MATCHUP_FACTOR_MAX, raw_factor))
     else:
         matchup_factor = 1.0  # no defensive data available — no adjustment, not a guess
 
     projected = blended_base * matchup_factor
 
-    rank, total_teams = opponent_rank(advanced_by_team, field_path, opp_val)
+    # Rank is based on the season-long number specifically — it's a
+    # well-understood "season rank" stat on its own. The blended value
+    # (which may lean on recent form) is what actually drives the
+    # projection, and is surfaced separately.
+    rank, total_teams = opponent_rank(advanced_by_team, field_path, season_defense_val)
 
     return {
         "playerId": player["playerId"],
@@ -182,7 +221,8 @@ def build_projection(player, category, stat_type, label, opponent, advanced_by_t
         "recentGames": [round(v, 1) for v in recent_games],
         "recentAvg": round(recent_avg, 1) if recent_avg is not None else None,
         "opponentMatchupMetric": ".".join(field_path),
-        "opponentValue": round(opp_val, 3) if opp_val is not None else None,
+        "opponentValue": round(season_defense_val, 3) if season_defense_val is not None else None,
+        "opponentRecentValue": round(recent_defense_val, 3) if recent_defense_val is not None else None,
         "leagueAvgValue": round(league_avg, 3) if league_avg is not None else None,
         "opponentRank": rank,
         "totalTeamsRanked": total_teams,
@@ -201,6 +241,7 @@ def main():
         return
 
     advanced_by_team = raw.get("advancedStatsByTeam", {})
+    recent_defense_by_team = raw.get("recentDefenseByTeam", {})
     output_games = []
 
     for game in raw.get("games", []):
@@ -214,11 +255,18 @@ def main():
                 for stat_type, label in config.STAT_TARGETS.get(category, []):
                     if stat_type not in player.get("seasonStats", {}) and not player.get("gameLog"):
                         continue
-                    projection = build_projection(player, category, stat_type, label, opponent, advanced_by_team)
+                    projection = build_projection(player, category, stat_type, label, opponent, advanced_by_team, recent_defense_by_team)
                     if projection:
                         output_players.append(projection)
 
-            output_teams.append({"team": team_entry["team"], "opponent": opponent, "players": output_players})
+            output_teams.append(
+                {
+                    "team": team_entry["team"],
+                    "opponent": opponent,
+                    "homeAway": team_entry.get("homeAway"),
+                    "players": output_players,
+                }
+            )
 
         output_games.append(
             {

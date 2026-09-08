@@ -65,6 +65,59 @@ function buildGameLogSVG(recentGames, projected, width = 600, height = 46) {
 
 let projectionsData = null;
 let activeGameIndex = 0;
+let searchQuery = "";
+
+// ============================================================
+// CSV export — pure function kept separate from the download
+// mechanics so it's testable without a browser.
+// ============================================================
+
+function csvEscape(value) {
+  const s = String(value ?? "");
+  if (/[",\n]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+  return s;
+}
+
+function generateCSV(data) {
+  const headers = [
+    "team", "opponent", "homeAway", "player", "category", "label",
+    "seasonAvg", "recentAvg", "projected", "matchupFactor", "confidence",
+    "opponentRank", "totalTeamsRanked", "gameStartDate",
+  ];
+  const rows = [headers.join(",")];
+
+  for (const game of (data.games || [])) {
+    for (const t of (game.teams || [])) {
+      for (const p of (t.players || [])) {
+        rows.push(
+          [
+            t.team, t.opponent, t.homeAway ?? "", p.name, p.category, p.label,
+            p.seasonAvg ?? "", p.recentAvg ?? "", p.projected ?? "", p.matchupFactor ?? "", p.confidence ?? "",
+            p.opponentRank ?? "", p.totalTeamsRanked ?? "", game.startDate ?? "",
+          ]
+            .map(csvEscape)
+            .join(",")
+        );
+      }
+    }
+  }
+  return rows.join("\n");
+}
+
+function downloadCSV() {
+  if (!projectionsData) return;
+  const csv = generateCSV(projectionsData);
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  const dateStamp = new Date().toISOString().slice(0, 10);
+  a.href = url;
+  a.download = `cfb-prop-projections-${dateStamp}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
 
 // If the last successful run is older than this, show a staleness
 // warning rather than silently displaying old data as current. Set
@@ -149,8 +202,74 @@ function render() {
 
   if (activeGameIndex >= games.length) activeGameIndex = 0;
   renderSidebar(games);
-  renderMain(games[activeGameIndex]);
-  renderLeaderboard(games);
+
+  if (searchQuery) {
+    renderSearchResults(games, searchQuery);
+  } else {
+    renderMain(games[activeGameIndex]);
+    renderLeaderboard(games);
+  }
+}
+
+// Player search — unlike the leaderboard, this shows every match
+// regardless of confidence (a search is a direct lookup, not a
+// recommendation), across every tracked game.
+function renderSearchResults(games, query) {
+  const q = query.toLowerCase();
+  const matches = [];
+  games.forEach((game, gameIndex) => {
+    (game.teams || []).forEach((t) => {
+      (t.players || []).forEach((p) => {
+        if (p.name.toLowerCase().includes(q)) {
+          matches.push({ ...p, gameIndex, team: t.team, opponent: t.opponent });
+        }
+      });
+    });
+  });
+
+  const main = document.getElementById("main");
+  main.innerHTML = `
+    <div class="report-header">
+      <div class="report-title display">Search: "${query}"</div>
+      <button class="clear-search-link" id="clear-search-btn">Clear search</button>
+    </div>
+    ${
+      matches.length === 0
+        ? `<div class="empty-state"><div class="empty-state-title display">No players found</div><p>No tracked player matches "${query}" this week.</p></div>`
+        : `<div class="leaderboard-grid">
+            ${matches
+              .map((p) => {
+                const badge = matchupBadge(p.matchupFactor);
+                return `
+                  <button class="leaderboard-item" data-game-index="${p.gameIndex}">
+                    <div class="leaderboard-item-top">
+                      <span class="leaderboard-name">${p.name}</span>
+                      <span class="leaderboard-number display">${p.projected}</span>
+                    </div>
+                    <div class="leaderboard-meta">${p.label} · ${p.team} vs ${p.opponent}</div>
+                    <div class="leaderboard-meta"><span class="badge ${badge.cls}">${badge.label}</span></div>
+                  </button>
+                `;
+              })
+              .join("")}
+          </div>`
+    }
+  `;
+
+  document.getElementById("clear-search-btn").addEventListener("click", () => {
+    document.getElementById("player-search").value = "";
+    searchQuery = "";
+    render();
+  });
+
+  main.querySelectorAll(".leaderboard-item").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeGameIndex = parseInt(btn.dataset.gameIndex, 10);
+      document.getElementById("player-search").value = "";
+      searchQuery = "";
+      render();
+    });
+  });
 }
 
 // Flattens every player across every tracked game, ranks the most
@@ -272,10 +391,11 @@ function renderPlayerRow(p) {
 }
 
 function rankText(p) {
+  const recentNote = p.opponentRecentValue != null ? ` (recent form: ${p.opponentRecentValue}, season: ${p.opponentValue ?? "—"})` : "";
   if (p.opponentRank == null || p.totalTeamsRanked == null) {
-    return `Opponent allows ${p.opponentValue ?? "—"} vs league avg ${p.leagueAvgValue ?? "—"}`;
+    return `Opponent allows ${p.opponentValue ?? "—"} vs league avg ${p.leagueAvgValue ?? "—"}${recentNote}`;
   }
-  return `Opponent ranks ${ordinal(p.opponentRank)} of ${p.totalTeamsRanked} on this defensive metric (${p.opponentValue ?? "—"} vs league avg ${p.leagueAvgValue ?? "—"})`;
+  return `Opponent ranks ${ordinal(p.opponentRank)} of ${p.totalTeamsRanked} on this defensive metric (season avg ${p.opponentValue ?? "—"} vs league avg ${p.leagueAvgValue ?? "—"})${recentNote}`;
 }
 
 function ordinal(n) {
@@ -292,10 +412,12 @@ function renderMain(game) {
       const playersHtml = (t.players || []).length
         ? t.players.map(renderPlayerRow).join("")
         : `<div class="matchup-note">No usable player props found for ${t.team} this run.</div>`;
+      const homeAwayLabel = t.homeAway === "home" ? "Home" : t.homeAway === "away" ? "Away" : null;
       return `
         <div class="team-block">
           <div class="team-heading">
             <div class="team-name display">${t.team}</div>
+            ${homeAwayLabel ? `<span class="badge badge-neutral">${homeAwayLabel}</span>` : ""}
             <div class="vs-opponent">vs ${t.opponent}</div>
           </div>
           <div class="yard-tick" style="margin: 8px 0 0 0;"></div>
@@ -323,4 +445,15 @@ function renderMain(game) {
   `;
 }
 
+function initControls() {
+  const searchInput = document.getElementById("player-search");
+  searchInput.addEventListener("input", () => {
+    searchQuery = searchInput.value.trim();
+    render();
+  });
+
+  document.getElementById("csv-export-btn").addEventListener("click", downloadCSV);
+}
+
+initControls();
 loadData();

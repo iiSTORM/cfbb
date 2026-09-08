@@ -102,7 +102,9 @@ def _backoff_seconds(attempt, retry_after_header=None):
 
 
 def get_upcoming_games():
-    """All season games, filtered to the lookahead window and not yet completed."""
+    """All season games, filtered to the lookahead window, not yet
+    completed, and (if configured) restricted to TEAM_ALLOWLIST /
+    CONFERENCE_ALLOWLIST."""
     log.info(f"Fetching {config.SEASON_YEAR} schedule...")
     games = cfbd_get("/games", {"year": config.SEASON_YEAR, "seasonType": config.SEASON_TYPE})
     if not games:
@@ -113,6 +115,9 @@ def get_upcoming_games():
     cutoff = now + timedelta(days=config.LOOKAHEAD_DAYS)
     upcoming = []
 
+    team_allowlist = {t.lower() for t in config.TEAM_ALLOWLIST}
+    conf_allowlist = {c.lower() for c in config.CONFERENCE_ALLOWLIST}
+
     for g in games:
         completed = g.get("completed", False)
         start_date = g.get("startDate") or g.get("start_date")
@@ -122,11 +127,28 @@ def get_upcoming_games():
             start_dt = datetime.fromisoformat(start_date.replace("Z", "+00:00"))
         except ValueError:
             continue
-        if now <= start_dt <= cutoff:
-            upcoming.append(g)
+        if not (now <= start_dt <= cutoff):
+            continue
+
+        if team_allowlist:
+            home = (g.get("homeTeam") or g.get("home_team") or "").lower()
+            away = (g.get("awayTeam") or g.get("away_team") or "").lower()
+            if home not in team_allowlist and away not in team_allowlist:
+                continue
+
+        if conf_allowlist:
+            home_conf = (g.get("homeConference") or g.get("home_conference") or "").lower()
+            away_conf = (g.get("awayConference") or g.get("away_conference") or "").lower()
+            if home_conf not in conf_allowlist and away_conf not in conf_allowlist:
+                continue
+
+        upcoming.append(g)
 
     upcoming.sort(key=lambda g: g.get("startDate") or g.get("start_date") or "")
-    log.info(f"Found {len(upcoming)} upcoming games in the next {config.LOOKAHEAD_DAYS} days.")
+    filter_note = ""
+    if team_allowlist or conf_allowlist:
+        filter_note = " (after allowlist filtering)"
+    log.info(f"Found {len(upcoming)} upcoming games in the next {config.LOOKAHEAD_DAYS} days{filter_note}.")
     return upcoming[: config.MAX_GAMES]
 
 
@@ -261,6 +283,19 @@ def build_player_game_logs(team_games, team, player_ids):
     return logs
 
 
+def get_team_recent_defense(team):
+    """Per-game advanced stats for this team's games so far this season
+    — used to blend recent defensive form into the matchup factor,
+    rather than relying only on the season-long average (a defense
+    can be trending well above or below its full-season number).
+    Sorted oldest-to-newest by week so 'last N games' is well-defined."""
+    data = cfbd_get("/stats/game/advanced", {"year": config.SEASON_YEAR, "team": team, "seasonType": config.SEASON_TYPE})
+    if not data:
+        return []
+    data.sort(key=lambda g: g.get("week", 0))
+    return data
+
+
 def get_advanced_defense_for_all_teams():
     """Season advanced stats (offense + defense) for every team — used both
     for the specific opponent's numbers and for computing league averages."""
@@ -284,6 +319,7 @@ def main():
         "season": config.SEASON_YEAR,
         "seasonType": config.SEASON_TYPE,
         "advancedStatsByTeam": advanced_by_team,
+        "recentDefenseByTeam": {},
         "games": [],
     }
 
@@ -295,6 +331,7 @@ def main():
     leaders_cache = {}
     team_games_cache = {}
     roster_cache = {}
+    recent_defense_cache = {}
 
     for game in games:
         home = game.get("homeTeam") or game.get("home_team")
@@ -316,6 +353,12 @@ def main():
 
             if team not in roster_cache:
                 roster_cache[team] = get_team_roster(team)
+
+            # Opponent's recent defensive form (not team's) — this is what
+            # team's players are facing, so it's what the matchup factor needs.
+            if opponent not in recent_defense_cache:
+                recent_defense_cache[opponent] = get_team_recent_defense(opponent)
+                raw["recentDefenseByTeam"][opponent] = recent_defense_cache[opponent]
 
             all_leaders = []  # [(category, playerDict), ...]
             for category in config.STAT_TARGETS:
@@ -342,7 +385,9 @@ def main():
                         }
                     )
 
-            game_entry["teams"].append({"team": team, "opponent": opponent, "players": team_players})
+            game_entry["teams"].append(
+                {"team": team, "opponent": opponent, "homeAway": "home" if team == home else "away", "players": team_players}
+            )
 
         raw["games"].append(game_entry)
 

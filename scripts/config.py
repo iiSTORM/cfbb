@@ -77,6 +77,23 @@ SEASON_WEIGHT = 0.4
 MATCHUP_FACTOR_MIN = 0.75
 MATCHUP_FACTOR_MAX = 1.35
 
+# Recent defensive form: how many of the opponent's most recent games
+# to average for the "recent" half of the matchup factor blend, and
+# how much weight recent form gets vs. the season-long number. A
+# defense can be trending well above or below its full-season average
+# — 3 games is a small sample, so this leans toward the season number
+# by default rather than overreacting to a couple of games.
+DEF_RECENT_GAMES_WINDOW = 3
+DEF_RECENT_WEIGHT = 0.4
+DEF_SEASON_WEIGHT = 0.6
+
+# Optional focus filters — leave both empty to track every team/game
+# in range (default behavior). Comma-separated env var overrides, e.g.
+# CFB_TEAM_ALLOWLIST="Ohio State,Michigan,Georgia". Team names must
+# match CFBD's team naming exactly (as they appear in raw.json).
+TEAM_ALLOWLIST = [t.strip() for t in os.environ.get("CFB_TEAM_ALLOWLIST", "").split(",") if t.strip()]
+CONFERENCE_ALLOWLIST = [c.strip() for c in os.environ.get("CFB_CONFERENCE_ALLOWLIST", "").split(",") if c.strip()]
+
 RAW_DATA_PATH = "docs/data/raw.json"
 PROJECTIONS_PATH = "docs/data/projections.json"
 
