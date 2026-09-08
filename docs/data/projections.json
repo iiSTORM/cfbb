@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T07:52:31.396982+00:00",
+  "generatedAt": "2026-09-08T12:54:25.515150+00:00",
   "season": 2026,
   "seasonType": "regular",
   "games": [
@@ -22,24 +22,6 @@
       ]
     },
     {
-      "gameId": 401909126,
-      "startDate": "2026-09-10T23:00:00.000Z",
-      "homeTeam": "Denison",
-      "awayTeam": "Oberlin",
-      "teams": [
-        {
-          "team": "Denison",
-          "opponent": "Oberlin",
-          "players": []
-        },
-        {
-          "team": "Oberlin",
-          "opponent": "Denison",
-          "players": []
-        }
-      ]
-    },
-    {
       "gameId": 401906516,
       "startDate": "2026-09-10T23:00:00.000Z",
       "homeTeam": "Northwestern (OK)",
@@ -53,6 +35,24 @@
         {
           "team": "Arkansas Tech",
           "opponent": "Northwestern (OK)",
+          "players": []
+        }
+      ]
+    },
+    {
+      "gameId": 401909126,
+      "startDate": "2026-09-10T23:00:00.000Z",
+      "homeTeam": "Denison",
+      "awayTeam": "Oberlin",
+      "teams": [
+        {
+          "team": "Denison",
+          "opponent": "Oberlin",
+          "players": []
+        },
+        {
+          "team": "Oberlin",
+          "opponent": "Denison",
           "players": []
         }
       ]
@@ -117,6 +117,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 401.0,
               "confidence": "Low"
@@ -135,6 +137,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 5.0,
               "confidence": "Low"
@@ -153,6 +157,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 40.0,
               "confidence": "Low"
@@ -171,6 +177,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 37.0,
               "confidence": "Low"
@@ -189,6 +197,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 234.0,
               "confidence": "Low"
@@ -207,6 +217,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 12.0,
               "confidence": "Low"
@@ -225,6 +237,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 67.0,
               "confidence": "Low"
@@ -243,6 +257,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 4.0,
               "confidence": "Low"
@@ -261,6 +277,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 36.0,
               "confidence": "Low"
@@ -279,6 +297,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 3.0,
               "confidence": "Low"
@@ -304,6 +324,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.395,
               "leagueAvgValue": 0.382,
+              "opponentRank": 73,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.036,
               "projected": 147.1,
               "confidence": "Medium"
@@ -323,6 +345,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.395,
               "leagueAvgValue": 0.382,
+              "opponentRank": 73,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.036,
               "projected": 0.5,
               "confidence": "Low"
@@ -342,6 +366,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": 0.227,
               "leagueAvgValue": 0.369,
+              "opponentRank": 14,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 25.1,
               "confidence": "Low"
@@ -361,6 +387,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": 0.227,
               "leagueAvgValue": 0.369,
+              "opponentRank": 14,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 15.0,
               "confidence": "Low"
@@ -379,6 +407,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.395,
               "leagueAvgValue": 0.382,
+              "opponentRank": 73,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.036,
               "projected": 57.2,
               "confidence": "Low"
@@ -397,6 +427,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.395,
               "leagueAvgValue": 0.382,
+              "opponentRank": 73,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.036,
               "projected": 3.3,
               "confidence": "Low"
@@ -416,6 +448,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.395,
               "leagueAvgValue": 0.382,
+              "opponentRank": 73,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.036,
               "projected": 32.6,
               "confidence": "Medium"
@@ -435,6 +469,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.395,
               "leagueAvgValue": 0.382,
+              "opponentRank": 73,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.036,
               "projected": 2.6,
               "confidence": "Medium"
@@ -453,6 +489,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.395,
               "leagueAvgValue": 0.382,
+              "opponentRank": 73,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.036,
               "projected": 64.2,
               "confidence": "Low"
@@ -471,6 +509,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.395,
               "leagueAvgValue": 0.382,
+              "opponentRank": 73,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.036,
               "projected": 2.1,
               "confidence": "Low"
@@ -503,6 +543,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 155.0,
               "confidence": "Low"
@@ -521,6 +563,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 2.0,
               "confidence": "Low"
@@ -539,6 +583,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 110.0,
               "confidence": "Low"
@@ -557,6 +603,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 64.0,
               "confidence": "Low"
@@ -575,6 +623,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 58.0,
               "confidence": "Low"
@@ -593,6 +643,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 2.0,
               "confidence": "Low"
@@ -611,6 +663,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 47.0,
               "confidence": "Low"
@@ -629,6 +683,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 1.0,
               "confidence": "Low"
@@ -647,6 +703,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 31.0,
               "confidence": "Low"
@@ -665,6 +723,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 2.0,
               "confidence": "Low"
@@ -690,6 +750,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.286,
               "leagueAvgValue": 0.382,
+              "opponentRank": 34,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 79.9,
               "confidence": "Medium"
@@ -709,6 +771,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.286,
               "leagueAvgValue": 0.382,
+              "opponentRank": 34,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 1.1,
               "confidence": "Low"
@@ -728,6 +792,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": 0.364,
               "leagueAvgValue": 0.369,
+              "opponentRank": 66,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.985,
               "projected": 92.6,
               "confidence": "Medium"
@@ -747,6 +813,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": 0.364,
               "leagueAvgValue": 0.369,
+              "opponentRank": 66,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.985,
               "projected": 33.5,
               "confidence": "Low"
@@ -766,6 +834,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.286,
               "leagueAvgValue": 0.382,
+              "opponentRank": 34,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 24.0,
               "confidence": "Low"
@@ -785,6 +855,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.286,
               "leagueAvgValue": 0.382,
+              "opponentRank": 34,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 3.4,
               "confidence": "Low"
@@ -804,6 +876,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.286,
               "leagueAvgValue": 0.382,
+              "opponentRank": 34,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 22.1,
               "confidence": "Low"
@@ -823,6 +897,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.286,
               "leagueAvgValue": 0.382,
+              "opponentRank": 34,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 2.2,
               "confidence": "Low"
@@ -842,6 +918,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.286,
               "leagueAvgValue": 0.382,
+              "opponentRank": 34,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 18.8,
               "confidence": "Low"
@@ -861,11 +939,31 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.286,
               "leagueAvgValue": 0.382,
+              "opponentRank": 34,
+              "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 1.9,
               "confidence": "Low"
             }
           ]
+        }
+      ]
+    },
+    {
+      "gameId": 401908691,
+      "startDate": "2026-09-11T23:00:00.000Z",
+      "homeTeam": "St. Lawrence",
+      "awayTeam": "St. John Fisher",
+      "teams": [
+        {
+          "team": "St. Lawrence",
+          "opponent": "St. John Fisher",
+          "players": []
+        },
+        {
+          "team": "St. John Fisher",
+          "opponent": "St. Lawrence",
+          "players": []
         }
       ]
     },
@@ -893,6 +991,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 307.0,
               "confidence": "Low"
@@ -911,6 +1011,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 2.0,
               "confidence": "Low"
@@ -929,6 +1031,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 69.0,
               "confidence": "Low"
@@ -947,6 +1051,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 56.0,
               "confidence": "Low"
@@ -965,6 +1071,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 83.0,
               "confidence": "Low"
@@ -983,6 +1091,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 4.0,
               "confidence": "Low"
@@ -1001,6 +1111,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 67.0,
               "confidence": "Low"
@@ -1019,6 +1131,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 4.0,
               "confidence": "Low"
@@ -1037,6 +1151,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 62.0,
               "confidence": "Low"
@@ -1055,6 +1171,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": null,
               "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
               "matchupFactor": 1.0,
               "projected": 2.0,
               "confidence": "Low"
@@ -1080,6 +1198,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.4,
               "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.048,
               "projected": 255.8,
               "confidence": "Medium"
@@ -1099,6 +1219,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.4,
               "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.048,
               "projected": 1.6,
               "confidence": "Medium"
@@ -1118,6 +1240,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": 0.524,
               "leagueAvgValue": 0.369,
+              "opponentRank": 126,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.35,
               "projected": 91.8,
               "confidence": "Medium"
@@ -1137,6 +1261,8 @@
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
               "opponentValue": 0.524,
               "leagueAvgValue": 0.369,
+              "opponentRank": 126,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.35,
               "projected": 85.7,
               "confidence": "Medium"
@@ -1156,6 +1282,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.4,
               "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.048,
               "projected": 82.8,
               "confidence": "Low"
@@ -1175,6 +1303,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.4,
               "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.048,
               "projected": 3.1,
               "confidence": "Medium"
@@ -1194,6 +1324,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.4,
               "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.048,
               "projected": 66.6,
               "confidence": "Medium"
@@ -1213,6 +1345,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.4,
               "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.048,
               "projected": 3.7,
               "confidence": "Medium"
@@ -1232,6 +1366,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.4,
               "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.048,
               "projected": 48.7,
               "confidence": "Low"
@@ -1251,6 +1387,8 @@
               "opponentMatchupMetric": "defense.passingPlays.successRate",
               "opponentValue": 0.4,
               "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
               "matchupFactor": 1.048,
               "projected": 4.2,
               "confidence": "Medium"
@@ -1260,38 +1398,432 @@
       ]
     },
     {
-      "gameId": 401906200,
+      "gameId": 401858222,
       "startDate": "2026-09-11T23:00:00.000Z",
-      "homeTeam": "North Greenville",
-      "awayTeam": "Charleston (WV)",
+      "homeTeam": "NC State",
+      "awayTeam": "Richmond",
       "teams": [
         {
-          "team": "North Greenville",
-          "opponent": "Charleston (WV)",
-          "players": []
+          "team": "NC State",
+          "opponent": "Richmond",
+          "players": [
+            {
+              "playerId": "5079301",
+              "name": "CJ Bailey",
+              "category": "passing",
+              "statType": "YDS",
+              "label": "Passing Yards",
+              "seasonAvg": 84.0,
+              "recentGames": [
+                84.0
+              ],
+              "recentAvg": 84.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 84.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079301",
+              "name": "CJ Bailey",
+              "category": "passing",
+              "statType": "TD",
+              "label": "Passing TDs",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 0.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079301",
+              "name": "CJ Bailey",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 33.0,
+              "recentGames": [
+                33.0
+              ],
+              "recentAvg": 33.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 33.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5148611",
+              "name": "Will Wilson",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 21.0,
+              "recentGames": [
+                21.0
+              ],
+              "recentAvg": 21.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 21.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5201877",
+              "name": "Vander Ploog",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 25.0,
+              "recentGames": [
+                25.0
+              ],
+              "recentAvg": 25.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 25.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5201877",
+              "name": "Vander Ploog",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 2.0,
+              "recentGames": [
+                2.0
+              ],
+              "recentAvg": 2.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 2.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079745",
+              "name": "Joshisa Trader",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 19.0,
+              "recentGames": [
+                19.0
+              ],
+              "recentAvg": 19.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 19.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079745",
+              "name": "Joshisa Trader",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 2.0,
+              "recentGames": [
+                2.0
+              ],
+              "recentAvg": 2.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 2.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5080819",
+              "name": "Davion Dozier",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 14.0,
+              "recentGames": [
+                14.0
+              ],
+              "recentAvg": 14.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 14.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5080819",
+              "name": "Davion Dozier",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 2.0,
+              "recentGames": [
+                2.0
+              ],
+              "recentAvg": 2.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 2.0,
+              "confidence": "Low"
+            }
+          ]
         },
         {
-          "team": "Charleston (WV)",
-          "opponent": "North Greenville",
-          "players": []
-        }
-      ]
-    },
-    {
-      "gameId": 401908202,
-      "startDate": "2026-09-11T23:00:00.000Z",
-      "homeTeam": "King's",
-      "awayTeam": "Stevenson",
-      "teams": [
-        {
-          "team": "King's",
-          "opponent": "Stevenson",
-          "players": []
-        },
-        {
-          "team": "Stevenson",
-          "opponent": "King's",
-          "players": []
+          "team": "Richmond",
+          "opponent": "NC State",
+          "players": [
+            {
+              "playerId": "5083373",
+              "name": "Ashten Snelsire",
+              "category": "passing",
+              "statType": "YDS",
+              "label": "Passing Yards",
+              "seasonAvg": 230.0,
+              "recentGames": [
+                199.0,
+                261.0
+              ],
+              "recentAvg": 230.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 310.5,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5083373",
+              "name": "Ashten Snelsire",
+              "category": "passing",
+              "statType": "TD",
+              "label": "Passing TDs",
+              "seasonAvg": 3.0,
+              "recentGames": [
+                3.0,
+                3.0
+              ],
+              "recentAvg": 3.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 4.1,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5153983",
+              "name": "Aziz Foster-Powell",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 71.0,
+              "recentGames": [
+                108.0,
+                34.0
+              ],
+              "recentAvg": 71.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": 0.482,
+              "leagueAvgValue": 0.369,
+              "opponentRank": 117,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.306,
+              "projected": 92.7,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5153977",
+              "name": "Jamaal Brown",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 40.0,
+              "recentGames": [
+                44.0,
+                36.0
+              ],
+              "recentAvg": 40.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": 0.482,
+              "leagueAvgValue": 0.369,
+              "opponentRank": 117,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.306,
+              "projected": 52.2,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5402260",
+              "name": "Bryce Allen",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 71.5,
+              "recentGames": [
+                106.0,
+                37.0
+              ],
+              "recentAvg": 71.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 96.5,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5402260",
+              "name": "Bryce Allen",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 3.5,
+              "recentGames": [
+                4.0,
+                3.0
+              ],
+              "recentAvg": 3.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 4.7,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5083372",
+              "name": "Quanye Veney",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 55.5,
+              "recentGames": [
+                38.0,
+                73.0
+              ],
+              "recentAvg": 55.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 74.9,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5083372",
+              "name": "Quanye Veney",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 3.0,
+              "recentGames": [
+                3.0,
+                3.0
+              ],
+              "recentAvg": 3.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 4.1,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5083381",
+              "name": "Sean Clarke",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 41.5,
+              "recentGames": [
+                3.0,
+                80.0
+              ],
+              "recentAvg": 41.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 56.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5083381",
+              "name": "Sean Clarke",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 4.5,
+              "recentGames": [
+                2.0,
+                7.0
+              ],
+              "recentAvg": 4.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 6.1,
+              "confidence": "Low"
+            }
+          ]
         }
       ]
     }
