@@ -16,7 +16,9 @@ Run locally with:
 
 import json
 import logging
+import random
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 import os
 
@@ -27,9 +29,17 @@ import config
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("fetch_data")
 
+# Retried: connection errors, timeouts, 5xx, and 429 (rate limit).
+# NOT retried: 404 and other 4xx — those mean the endpoint/params are
+# wrong, and hammering them again just burns quota for no benefit.
+RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
+MAX_RETRIES = 3
+BACKOFF_BASE_SECONDS = 1.5
+
 
 def cfbd_get(path, params=None):
-    """GET a CFBD endpoint. Returns parsed JSON, or None on failure."""
+    """GET a CFBD endpoint. Returns parsed JSON, or None on failure
+    (after retries for transient errors)."""
     if not config.CFBD_API_KEY:
         log.error("CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key")
         sys.exit(1)
@@ -37,19 +47,58 @@ def cfbd_get(path, params=None):
     url = f"{config.CFBD_BASE_URL}{path}"
     headers = {"Authorization": f"Bearer {config.CFBD_API_KEY}", "Accept": "application/json"}
 
-    try:
-        resp = requests.get(url, headers=headers, params=params or {}, timeout=config.REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        return resp.json()
-    except requests.exceptions.HTTPError as e:
-        log.error(f"HTTP error on {path} {params}: {e} — response body: {resp.text[:500]}")
-        return None
-    except requests.exceptions.RequestException as e:
-        log.error(f"Request failed on {path} {params}: {e}")
-        return None
-    except ValueError as e:
-        log.error(f"Failed to parse JSON from {path} {params}: {e} — raw text: {resp.text[:500]}")
-        return None
+    last_error_summary = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            resp = requests.get(url, headers=headers, params=params or {}, timeout=config.REQUEST_TIMEOUT)
+
+            if resp.status_code in RETRYABLE_STATUS_CODES and attempt < MAX_RETRIES:
+                wait = _backoff_seconds(attempt, resp.headers.get("Retry-After"))
+                log.warning(
+                    f"{resp.status_code} on {path} {params} (attempt {attempt}/{MAX_RETRIES}) — "
+                    f"retrying in {wait:.1f}s"
+                )
+                time.sleep(wait)
+                continue
+
+            resp.raise_for_status()
+            return resp.json()
+
+        except requests.exceptions.HTTPError as e:
+            # 404s and other non-retryable 4xx land here on the final attempt
+            # (or immediately, since they're not in RETRYABLE_STATUS_CODES).
+            log.error(f"HTTP error on {path} {params}: {e} — response body: {resp.text[:500]}")
+            return None
+        except requests.exceptions.RequestException as e:
+            last_error_summary = str(e)
+            if attempt < MAX_RETRIES:
+                wait = _backoff_seconds(attempt)
+                log.warning(
+                    f"Request failed on {path} {params} (attempt {attempt}/{MAX_RETRIES}): {e} — "
+                    f"retrying in {wait:.1f}s"
+                )
+                time.sleep(wait)
+                continue
+            log.error(f"Request failed on {path} {params} after {MAX_RETRIES} attempts: {e}")
+            return None
+        except ValueError as e:
+            log.error(f"Failed to parse JSON from {path} {params}: {e} — raw text: {resp.text[:500]}")
+            return None
+
+    log.error(f"Giving up on {path} {params} after {MAX_RETRIES} attempts: {last_error_summary}")
+    return None
+
+
+def _backoff_seconds(attempt, retry_after_header=None):
+    """Exponential backoff with jitter, honoring a server-provided
+    Retry-After header when present (typical on 429s)."""
+    if retry_after_header:
+        try:
+            return float(retry_after_header)
+        except ValueError:
+            pass
+    base = BACKOFF_BASE_SECONDS * (2 ** (attempt - 1))
+    return base + random.uniform(0, base * 0.3)
 
 
 def get_upcoming_games():
@@ -81,8 +130,33 @@ def get_upcoming_games():
     return upcoming[: config.MAX_GAMES]
 
 
-def get_season_stat_leaders(team, category):
-    """Top players for a team in a stat category this season (season totals)."""
+def get_team_roster(team):
+    """Roster with position for each player, used to sanity-check that
+    stat-category leaders are plausible for that category (see
+    ALLOWED_POSITIONS_BY_CATEGORY). Returns {player_id: position}."""
+    data = cfbd_get("/roster", {"team": team, "year": config.SEASON_YEAR})
+    if not data:
+        return {}
+
+    lookup = {}
+    for player in data:
+        player_id = player.get("id") or player.get("playerId")
+        position = player.get("position")
+        if player_id is not None and position:
+            lookup[player_id] = position
+    return lookup
+
+
+def get_season_stat_leaders(team, category, position_lookup=None):
+    """Top players for a team in a stat category this season (season totals).
+
+    position_lookup (player_id -> position), if given, filters out
+    candidates whose roster position doesn't fit the category — e.g. a
+    lineman's stray fumble-return yardage showing up under rushing.
+    A player who isn't found in position_lookup at all is KEPT rather
+    than dropped, since the goal is filtering obvious noise, not
+    strictly gating on a roster/stats ID match that might not always line up.
+    """
     data = cfbd_get(
         "/stats/player/season",
         {"year": config.SEASON_YEAR, "team": team, "category": category, "seasonType": config.SEASON_TYPE},
@@ -113,6 +187,17 @@ def get_season_stat_leaders(team, category):
         entry["stats"][stat_type] = stat_value
 
     players = list(by_player.values())
+
+    allowed_positions = config.ALLOWED_POSITIONS_BY_CATEGORY.get(category)
+    if position_lookup and allowed_positions:
+        filtered = []
+        for p in players:
+            position = position_lookup.get(p["playerId"])
+            if position is None or position in allowed_positions:
+                filtered.append(p)
+            else:
+                log.info(f"Filtered {p['player']} ({position}) out of {category} leaders for {team} — unexpected position")
+        players = filtered
 
     # Rank by the primary stat for this category (first one in STAT_TARGETS)
     primary_stat_type = config.STAT_TARGETS.get(category, [(None, None)])[0][0]
@@ -209,6 +294,7 @@ def main():
     # every game entry gets a full, correct report.
     leaders_cache = {}
     team_games_cache = {}
+    roster_cache = {}
 
     for game in games:
         home = game.get("homeTeam") or game.get("home_team")
@@ -228,11 +314,14 @@ def main():
             log.info(f"Processing {team} (vs {opponent})...")
             team_players = []
 
+            if team not in roster_cache:
+                roster_cache[team] = get_team_roster(team)
+
             all_leaders = []  # [(category, playerDict), ...]
             for category in config.STAT_TARGETS:
                 cache_key = (team, category)
                 if cache_key not in leaders_cache:
-                    leaders_cache[cache_key] = get_season_stat_leaders(team, category)
+                    leaders_cache[cache_key] = get_season_stat_leaders(team, category, roster_cache[team])
                 for player in leaders_cache[cache_key]:
                     all_leaders.append((category, player))
 

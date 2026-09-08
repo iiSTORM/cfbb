@@ -41,6 +41,20 @@ STAT_TARGETS = {
     "receiving": [("YDS", "Receiving Yards"), ("REC", "Receptions")],
 }
 
+# Which positions are plausible for a "leader" in each category. Season
+# stat leaders occasionally surface a player at an unexpected position
+# (e.g. a lineman with fumble-recovery return yards misfiled under
+# rushing, or a punter's stray return yardage). Roster position is
+# cross-checked against this list — but a player who isn't found on
+# the roster at all is kept rather than dropped, since the goal is
+# filtering out clear noise, not being a strict gate that breaks on
+# any roster/stats ID mismatch.
+ALLOWED_POSITIONS_BY_CATEGORY = {
+    "passing": {"QB"},
+    "rushing": {"RB", "QB", "FB", "WR"},
+    "receiving": {"WR", "TE", "RB", "FB"},
+}
+
 # Which advanced-defense field each offensive category is matched
 # against when computing the matchup factor. All are successRate
 # fields (bounded 0-1), which is more stable for ratio math than raw

@@ -51,6 +51,28 @@ def league_average(advanced_by_team, field_path):
     return sum(values) / len(values)
 
 
+def opponent_rank(advanced_by_team, field_path, opponent_val):
+    """Rank of the opponent's value among all teams with this metric
+    present, where rank 1 = the stingiest defense (lowest success rate
+    allowed). A raw number like "0.52 success rate allowed" means
+    nothing without context — this turns it into "38th of 134"."""
+    if opponent_val is None:
+        return None, None
+    section, subfield, metric = field_path
+    values = []
+    for team_data in advanced_by_team.values():
+        try:
+            v = team_data[section][subfield][metric]
+            if v is not None:
+                values.append(float(v))
+        except (KeyError, TypeError, ValueError):
+            continue
+    if not values:
+        return None, None
+    rank = 1 + sum(1 for v in values if v < opponent_val)
+    return rank, len(values)
+
+
 def opponent_value(advanced_by_team, opponent, field_path):
     section, subfield, metric = field_path
     team_data = advanced_by_team.get(opponent)
@@ -148,6 +170,8 @@ def build_projection(player, category, stat_type, label, opponent, advanced_by_t
 
     projected = blended_base * matchup_factor
 
+    rank, total_teams = opponent_rank(advanced_by_team, field_path, opp_val)
+
     return {
         "playerId": player["playerId"],
         "name": player["name"],
@@ -160,6 +184,8 @@ def build_projection(player, category, stat_type, label, opponent, advanced_by_t
         "opponentMatchupMetric": ".".join(field_path),
         "opponentValue": round(opp_val, 3) if opp_val is not None else None,
         "leagueAvgValue": round(league_avg, 3) if league_avg is not None else None,
+        "opponentRank": rank,
+        "totalTeamsRanked": total_teams,
         "matchupFactor": round(matchup_factor, 3),
         "projected": round(projected, 1),
         "confidence": confidence_label(recent_games),

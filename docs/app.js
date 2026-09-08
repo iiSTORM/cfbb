@@ -66,6 +66,32 @@ function buildGameLogSVG(recentGames, projected, width = 600, height = 46) {
 let projectionsData = null;
 let activeGameIndex = 0;
 
+// If the last successful run is older than this, show a staleness
+// warning rather than silently displaying old data as current. Set
+// comfortably above the twice-daily (~12h) schedule to allow for
+// normal timing slack without false alarms.
+const STALE_AFTER_HOURS = 20;
+
+function renderFreshnessBanner(generatedAt) {
+  const el = document.getElementById("freshness-banner");
+  if (!generatedAt) {
+    el.innerHTML = "";
+    return;
+  }
+  const ageHours = (Date.now() - new Date(generatedAt).getTime()) / 36e5;
+  if (ageHours <= STALE_AFTER_HOURS) {
+    el.innerHTML = "";
+    return;
+  }
+  const ageLabel = ageHours >= 48 ? `${Math.floor(ageHours / 24)} days` : `${Math.floor(ageHours)} hours`;
+  el.innerHTML = `
+    <div class="freshness-banner">
+      <strong>Data may be stale</strong> — last updated ${ageLabel} ago. Check the repo's
+      Actions tab to confirm the scheduled run is still succeeding.
+    </div>
+  `;
+}
+
 async function loadData() {
   try {
     const res = await fetch("data/projections.json", { cache: "no-store" });
@@ -98,6 +124,8 @@ function render() {
     ? `Updated ${generated.toLocaleDateString(undefined, { month: "short", day: "numeric" })}, ${generated.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" })}`
     : "";
 
+  renderFreshnessBanner(projectionsData.generatedAt);
+
   if (games.length === 0) {
     document.getElementById("matchup-list").innerHTML = "";
     const neverRun = !projectionsData.generatedAt;
@@ -122,6 +150,65 @@ function render() {
   if (activeGameIndex >= games.length) activeGameIndex = 0;
   renderSidebar(games);
   renderMain(games[activeGameIndex]);
+  renderLeaderboard(games);
+}
+
+// Flattens every player across every tracked game, ranks the most
+// favorable matchups (Medium/High confidence only — a favorable
+// matchup on an inconsistent player isn't a strong signal), and shows
+// a glanceable top-N instead of requiring a click into every game.
+function renderLeaderboard(games) {
+  const existing = document.getElementById("leaderboard");
+  if (existing) existing.remove();
+
+  const entries = [];
+  games.forEach((game, gameIndex) => {
+    (game.teams || []).forEach((t) => {
+      (t.players || []).forEach((p) => {
+        if (p.confidence === "Low") return;
+        entries.push({ ...p, gameIndex, team: t.team, opponent: t.opponent });
+      });
+    });
+  });
+
+  if (entries.length === 0) return;
+
+  entries.sort((a, b) => b.matchupFactor - a.matchupFactor);
+  const top = entries.slice(0, 8);
+
+  const html = `
+    <div class="leaderboard" id="leaderboard">
+      <div class="leaderboard-title display">Top Matchups This Week</div>
+      <div class="leaderboard-sub">Most favorable matchups among Medium/High-confidence projections, across every tracked game.</div>
+      <div class="leaderboard-grid">
+        ${top
+          .map((p) => {
+            const badge = matchupBadge(p.matchupFactor);
+            return `
+              <button class="leaderboard-item" data-game-index="${p.gameIndex}">
+                <div class="leaderboard-item-top">
+                  <span class="leaderboard-name">${p.name}</span>
+                  <span class="leaderboard-number display">${p.projected}</span>
+                </div>
+                <div class="leaderboard-meta">${p.label} · ${p.team} vs ${p.opponent}</div>
+                <div class="leaderboard-meta"><span class="badge ${badge.cls}">${badge.label}</span></div>
+              </button>
+            `;
+          })
+          .join("")}
+      </div>
+    </div>
+  `;
+
+  const main = document.getElementById("main");
+  main.insertAdjacentHTML("afterbegin", html);
+
+  document.querySelectorAll("#leaderboard .leaderboard-item").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeGameIndex = parseInt(btn.dataset.gameIndex, 10);
+      render();
+    });
+  });
 }
 
 function renderSidebar(games) {
@@ -178,10 +265,23 @@ function renderPlayerRow(p) {
         &nbsp;·&nbsp;
         Season avg ${p.seasonAvg ?? "—"}, recent avg ${p.recentAvg ?? "—"}
         &nbsp;·&nbsp;
-        Opponent allows ${p.opponentValue ?? "—"} on this metric vs league avg ${p.leagueAvgValue ?? "—"}
+        ${rankText(p)}
       </div>
     </div>
   `;
+}
+
+function rankText(p) {
+  if (p.opponentRank == null || p.totalTeamsRanked == null) {
+    return `Opponent allows ${p.opponentValue ?? "—"} vs league avg ${p.leagueAvgValue ?? "—"}`;
+  }
+  return `Opponent ranks ${ordinal(p.opponentRank)} of ${p.totalTeamsRanked} on this defensive metric (${p.opponentValue ?? "—"} vs league avg ${p.leagueAvgValue ?? "—"})`;
+}
+
+function ordinal(n) {
+  const s = ["th", "st", "nd", "rd"];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
 }
 
 function renderMain(game) {
