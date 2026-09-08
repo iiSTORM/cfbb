@@ -34,6 +34,10 @@ jobs:
       - name: Fetch raw stats
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+          CFB_MAX_GAMES: ${{ vars.CFB_MAX_GAMES }}
+          CFB_LOOKAHEAD_DAYS: ${{ vars.CFB_LOOKAHEAD_DAYS }}
+          CFB_TEAM_ALLOWLIST: ${{ vars.CFB_TEAM_ALLOWLIST }}
+          CFB_CONFERENCE_ALLOWLIST: ${{ vars.CFB_CONFERENCE_ALLOWLIST }}
         run: python scripts/fetch_data.py
 
       - name: Compute projections

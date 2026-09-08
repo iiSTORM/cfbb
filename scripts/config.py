@@ -12,19 +12,35 @@ you can debug this).
 
 import os
 
+
+def _int_env(name, default):
+    """int(os.environ[name]) with a safe fallback — handles both an
+    unset var and one set to an empty string (which GitHub Actions
+    does for an undefined repo Variable passed through as env)."""
+    val = os.environ.get(name, "").strip()
+    return int(val) if val else default
+
+
 CFBD_BASE_URL = "https://api.collegefootballdata.com"
 CFBD_API_KEY = os.environ.get("CFBD_API_KEY", "")
 
 # Season/week detection: override via env vars if auto-detection picks
 # the wrong week (e.g. during bye weeks or conference championship gaps).
-SEASON_YEAR = int(os.environ.get("CFB_SEASON_YEAR", "2026"))
+SEASON_YEAR = _int_env("CFB_SEASON_YEAR", 2026)
 SEASON_TYPE = os.environ.get("CFB_SEASON_TYPE", "regular")  # "regular" or "postseason"
 
 # How many upcoming games (within the lookahead window) to build
-# matchup reports for. Each game costs several API calls (player stats
-# for both teams + opponent defense), so keep this bounded.
-MAX_GAMES = int(os.environ.get("CFB_MAX_GAMES", "10"))
-LOOKAHEAD_DAYS = int(os.environ.get("CFB_LOOKAHEAD_DAYS", "7"))
+# matchup reports for, sorted by soonest kickoff — NOT by any notion
+# of "importance." Each game costs roughly a dozen API calls (roster +
+# season stats + game log per team, recent defense for the opponent),
+# so this is the single biggest lever on API quota. See the "Free tier
+# quota" section in README — the realistic budget for a twice-daily
+# schedule on the free 500-credit/month tier is much lower than it
+# might seem from this number alone. Tunable without a code change via
+# the repo Variable CFB_MAX_GAMES (Settings → Secrets and variables →
+# Actions → Variables).
+MAX_GAMES = _int_env("CFB_MAX_GAMES", 10)
+LOOKAHEAD_DAYS = _int_env("CFB_LOOKAHEAD_DAYS", 7)
 
 # How many top players per stat category, per team, to build reports
 # for (ranked by season total — e.g. top 1 passer, top 2 rushers).
