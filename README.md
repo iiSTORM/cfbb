@@ -20,15 +20,19 @@ projection works" below before trusting it.
 Sign up at https://collegefootballdata.com/key. The free tier covers
 this use case (scheduled stat pulls, not live in-game data).
 
-**Important:** CFBD's own docs (as of Sept 2026) note they're
-mid-transition to a new API reference, with the old Swagger docs
-marked "legacy." This project is built against CFBD's long-stable
-endpoint shapes (`/games`, `/stats/player/season`, `/stats/player/game`,
-`/stats/season/advanced`), but **after your first run, check the
-Action's log output and a sample of `docs/data/raw.json`** against
-https://api.collegefootballdata.com's current reference to confirm the
-field names still match. `scripts/config.py` and `scripts/fetch_data.py`
-are commented at every point where this matters most.
+**Important — this already bit us once:** CFBD's docs (as of Sept
+2026) note they're mid-transition to a new API reference, with the old
+Swagger docs marked "legacy." That transition turned out to be real:
+an earlier version of this project used `/stats/player/game?playerId=`
+for per-game stats, and that endpoint now returns a bare 404. It's
+been replaced with `/games/players?team=` (fetched once per team
+instead of once per player — also cuts API usage substantially). If
+another endpoint breaks the same way, the Action's log will show the
+exact failing path and a `404`/`Cannot GET` response — that's the
+signal to check https://api.collegefootballdata.com's current
+reference for a renamed path. `scripts/config.py` and
+`scripts/fetch_data.py` are commented at every point where this
+matters most.
 
 ### 2. Create the GitHub repo
 

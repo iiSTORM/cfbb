@@ -18,6 +18,7 @@ import json
 import logging
 import sys
 from datetime import datetime, timedelta, timezone
+import os
 
 import requests
 
@@ -121,15 +122,58 @@ def get_season_stat_leaders(team, category):
     return players[:top_n]
 
 
-def get_player_game_log(player_id):
-    """Recent per-game stat lines for a player this season."""
+def get_team_game_stats(team):
+    """
+    All of this team's games this season, with full player box scores
+    per category (passing/rushing/receiving/etc). This is the correct,
+    long-stable endpoint for per-game player stats — /stats/player/game
+    (used in earlier drafts of this script) returns a bare 404 as of
+    this API generation; /games/players is what CFBD's own official
+    client libraries use for this data.
+
+    One call per TEAM (not per player) — the response includes every
+    player's box score for every game, so we fetch it once and pull
+    out whichever players we care about.
+    """
     data = cfbd_get(
-        "/stats/player/game",
-        {"year": config.SEASON_YEAR, "playerId": player_id, "seasonType": config.SEASON_TYPE},
+        "/games/players",
+        {"year": config.SEASON_YEAR, "team": team, "seasonType": config.SEASON_TYPE},
     )
     if not data:
         return []
     return data
+
+
+def build_player_game_logs(team_games, team, player_ids):
+    """
+    Normalizes /games/players' nested shape (game -> team -> category ->
+    statType -> athletes) into a flat per-player log:
+        {player_id: [{"gameId": ..., "category": ..., "statType": ..., "stat": ...}, ...]}
+    so compute_projections.py only ever has to deal with one simple shape,
+    regardless of how CFBD nests the raw response.
+    """
+    logs = {pid: [] for pid in player_ids}
+    for game in team_games:
+        game_id = game.get("id")
+        for team_block in game.get("teams", []):
+            if team_block.get("team") != team:
+                continue
+            for cat in team_block.get("categories", []):
+                category = cat.get("name")
+                for stat_type_block in cat.get("types", []):
+                    stat_type = stat_type_block.get("name")
+                    for athlete in stat_type_block.get("athletes", []):
+                        pid = athlete.get("id")
+                        if pid in logs:
+                            logs[pid].append(
+                                {
+                                    "gameId": game_id,
+                                    "category": category,
+                                    "statType": stat_type,
+                                    "stat": athlete.get("stat"),
+                                }
+                            )
+    return logs
 
 
 def get_advanced_defense_for_all_teams():
@@ -158,7 +202,14 @@ def main():
         "games": [],
     }
 
-    teams_processed = set()
+    # Cached per (team, category) and per team — a team can appear in more
+    # than one upcoming game in the lookahead window, and previously this
+    # was handled by skipping (and silently dropping) the second
+    # occurrence entirely. Caching the underlying fetches instead means
+    # every game entry gets a full, correct report.
+    leaders_cache = {}
+    team_games_cache = {}
+
     for game in games:
         home = game.get("homeTeam") or game.get("home_team")
         away = game.get("awayTeam") or game.get("away_team")
@@ -177,21 +228,28 @@ def main():
             log.info(f"Processing {team} (vs {opponent})...")
             team_players = []
 
+            all_leaders = []  # [(category, playerDict), ...]
             for category in config.STAT_TARGETS:
-                if (team, category) in teams_processed:
-                    continue
-                teams_processed.add((team, category))
+                cache_key = (team, category)
+                if cache_key not in leaders_cache:
+                    leaders_cache[cache_key] = get_season_stat_leaders(team, category)
+                for player in leaders_cache[cache_key]:
+                    all_leaders.append((category, player))
 
-                leaders = get_season_stat_leaders(team, category)
-                for player in leaders:
-                    game_log = get_player_game_log(player["playerId"])
+            if all_leaders:
+                if team not in team_games_cache:
+                    team_games_cache[team] = get_team_game_stats(team)
+                player_ids = [player["playerId"] for _category, player in all_leaders]
+                logs_by_player = build_player_game_logs(team_games_cache[team], team, player_ids)
+
+                for category, player in all_leaders:
                     team_players.append(
                         {
                             "playerId": player["playerId"],
                             "name": player["player"],
                             "category": category,
                             "seasonStats": player["stats"],
-                            "gameLog": game_log,
+                            "gameLog": logs_by_player.get(player["playerId"], []),
                         }
                     )
 
@@ -199,6 +257,7 @@ def main():
 
         raw["games"].append(game_entry)
 
+    os.makedirs(os.path.dirname(config.RAW_DATA_PATH), exist_ok=True)
     with open(config.RAW_DATA_PATH, "w") as f:
         json.dump(raw, f, indent=2)
     log.info(f"Wrote raw data for {len(raw['games'])} games to {config.RAW_DATA_PATH}")

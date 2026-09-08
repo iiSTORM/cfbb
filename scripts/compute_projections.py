@@ -26,6 +26,7 @@ it says nothing about whether the model itself is accurate.
 
 import json
 import logging
+import os
 import statistics
 
 import config
@@ -210,6 +211,7 @@ def main():
         "games": output_games,
     }
 
+    os.makedirs(os.path.dirname(config.PROJECTIONS_PATH), exist_ok=True)
     with open(config.PROJECTIONS_PATH, "w") as f:
         json.dump(output, f, indent=2)
 
