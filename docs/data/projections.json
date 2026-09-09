@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T15:35:52.824822+00:00",
+  "generatedAt": "2026-09-09T03:57:06.975348+00:00",
   "season": 2026,
   "seasonType": "regular",
   "games": [
@@ -18,26 +18,6 @@
         {
           "team": "Oberlin",
           "opponent": "Denison",
-          "homeAway": "away",
-          "players": []
-        }
-      ]
-    },
-    {
-      "gameId": 401907622,
-      "startDate": "2026-09-10T23:00:00.000Z",
-      "homeTeam": "West Virginia Wesleyan",
-      "awayTeam": "Shippensburg",
-      "teams": [
-        {
-          "team": "West Virginia Wesleyan",
-          "opponent": "Shippensburg",
-          "homeAway": "home",
-          "players": []
-        },
-        {
-          "team": "Shippensburg",
-          "opponent": "West Virginia Wesleyan",
           "homeAway": "away",
           "players": []
         }
@@ -64,20 +44,20 @@
       ]
     },
     {
-      "gameId": 401906546,
-      "startDate": "2026-09-11T00:00:00.000Z",
-      "homeTeam": "Southwestern Oklahoma State",
-      "awayTeam": "Harding",
+      "gameId": 401907622,
+      "startDate": "2026-09-10T23:00:00.000Z",
+      "homeTeam": "West Virginia Wesleyan",
+      "awayTeam": "Shippensburg",
       "teams": [
         {
-          "team": "Southwestern Oklahoma State",
-          "opponent": "Harding",
+          "team": "West Virginia Wesleyan",
+          "opponent": "Shippensburg",
           "homeAway": "home",
           "players": []
         },
         {
-          "team": "Harding",
-          "opponent": "Southwestern Oklahoma State",
+          "team": "Shippensburg",
+          "opponent": "West Virginia Wesleyan",
           "homeAway": "away",
           "players": []
         }
@@ -98,6 +78,26 @@
         {
           "team": "Arkansas Monticello",
           "opponent": "East Central",
+          "homeAway": "away",
+          "players": []
+        }
+      ]
+    },
+    {
+      "gameId": 401906546,
+      "startDate": "2026-09-11T00:00:00.000Z",
+      "homeTeam": "Southwestern Oklahoma State",
+      "awayTeam": "Harding",
+      "teams": [
+        {
+          "team": "Southwestern Oklahoma State",
+          "opponent": "Harding",
+          "homeAway": "home",
+          "players": []
+        },
+        {
+          "team": "Harding",
+          "opponent": "Southwestern Oklahoma State",
           "homeAway": "away",
           "players": []
         }
@@ -465,8 +465,8 @@
               "label": "Passing Yards",
               "seasonAvg": 142.0,
               "recentGames": [
-                94.0,
-                190.0
+                190.0,
+                94.0
               ],
               "recentAvg": 142.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -487,8 +487,8 @@
               "label": "Passing TDs",
               "seasonAvg": 0.5,
               "recentGames": [
-                0.0,
-                1.0
+                1.0,
+                0.0
               ],
               "recentAvg": 0.5,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -509,8 +509,8 @@
               "label": "Rushing Yards",
               "seasonAvg": 33.5,
               "recentGames": [
-                13.0,
-                54.0
+                54.0,
+                13.0
               ],
               "recentAvg": 33.5,
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
@@ -531,8 +531,8 @@
               "label": "Rushing Yards",
               "seasonAvg": 20.0,
               "recentGames": [
-                2.0,
-                38.0
+                38.0,
+                2.0
               ],
               "recentAvg": 20.0,
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
@@ -595,8 +595,8 @@
               "label": "Receiving Yards",
               "seasonAvg": 31.5,
               "recentGames": [
-                21.0,
-                42.0
+                42.0,
+                21.0
               ],
               "recentAvg": 31.5,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -617,8 +617,8 @@
               "label": "Receptions",
               "seasonAvg": 2.5,
               "recentGames": [
-                3.0,
-                2.0
+                2.0,
+                3.0
               ],
               "recentAvg": 2.5,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -681,8 +681,8 @@
               "label": "Total Tackles",
               "seasonAvg": 4.5,
               "recentGames": [
-                6.0,
-                3.0
+                3.0,
+                6.0
               ],
               "recentAvg": 4.5,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -725,8 +725,8 @@
               "label": "Total Tackles",
               "seasonAvg": 3.0,
               "recentGames": [
-                2.0,
-                4.0
+                4.0,
+                2.0
               ],
               "recentAvg": 3.0,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -804,66 +804,6 @@
               "confidence": "Low"
             }
           ]
-        }
-      ]
-    },
-    {
-      "gameId": 401906200,
-      "startDate": "2026-09-11T23:00:00.000Z",
-      "homeTeam": "North Greenville",
-      "awayTeam": "Charleston (WV)",
-      "teams": [
-        {
-          "team": "North Greenville",
-          "opponent": "Charleston (WV)",
-          "homeAway": "home",
-          "players": []
-        },
-        {
-          "team": "Charleston (WV)",
-          "opponent": "North Greenville",
-          "homeAway": "away",
-          "players": []
-        }
-      ]
-    },
-    {
-      "gameId": 401908202,
-      "startDate": "2026-09-11T23:00:00.000Z",
-      "homeTeam": "King's",
-      "awayTeam": "Stevenson",
-      "teams": [
-        {
-          "team": "King's",
-          "opponent": "Stevenson",
-          "homeAway": "home",
-          "players": []
-        },
-        {
-          "team": "Stevenson",
-          "opponent": "King's",
-          "homeAway": "away",
-          "players": []
-        }
-      ]
-    },
-    {
-      "gameId": 401908691,
-      "startDate": "2026-09-11T23:00:00.000Z",
-      "homeTeam": "St. Lawrence",
-      "awayTeam": "St. John Fisher",
-      "teams": [
-        {
-          "team": "St. Lawrence",
-          "opponent": "St. John Fisher",
-          "homeAway": "home",
-          "players": []
-        },
-        {
-          "team": "St. John Fisher",
-          "opponent": "St. Lawrence",
-          "homeAway": "away",
-          "players": []
         }
       ]
     },
@@ -1571,6 +1511,1446 @@
               "totalTeamsRanked": 138,
               "matchupFactor": 0.75,
               "projected": 0.0,
+              "confidence": "Low"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": 401908202,
+      "startDate": "2026-09-11T23:00:00.000Z",
+      "homeTeam": "King's",
+      "awayTeam": "Stevenson",
+      "teams": [
+        {
+          "team": "King's",
+          "opponent": "Stevenson",
+          "homeAway": "home",
+          "players": []
+        },
+        {
+          "team": "Stevenson",
+          "opponent": "King's",
+          "homeAway": "away",
+          "players": []
+        }
+      ]
+    },
+    {
+      "gameId": 401858222,
+      "startDate": "2026-09-11T23:00:00.000Z",
+      "homeTeam": "NC State",
+      "awayTeam": "Richmond",
+      "teams": [
+        {
+          "team": "NC State",
+          "opponent": "Richmond",
+          "homeAway": "home",
+          "players": [
+            {
+              "playerId": "5079301",
+              "name": "CJ Bailey",
+              "category": "passing",
+              "statType": "YDS",
+              "label": "Passing Yards",
+              "seasonAvg": 84.0,
+              "recentGames": [
+                84.0
+              ],
+              "recentAvg": 84.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.242,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.75,
+              "projected": 63.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079301",
+              "name": "CJ Bailey",
+              "category": "passing",
+              "statType": "TD",
+              "label": "Passing TDs",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.242,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.75,
+              "projected": 0.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079301",
+              "name": "CJ Bailey",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 33.0,
+              "recentGames": [
+                33.0
+              ],
+              "recentAvg": 33.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.292,
+              "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.791,
+              "projected": 26.1,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5148611",
+              "name": "Will Wilson",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 21.0,
+              "recentGames": [
+                21.0
+              ],
+              "recentAvg": 21.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.292,
+              "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.791,
+              "projected": 16.6,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5201877",
+              "name": "Vander Ploog",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 25.0,
+              "recentGames": [
+                25.0
+              ],
+              "recentAvg": 25.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.242,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.75,
+              "projected": 18.8,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5201877",
+              "name": "Vander Ploog",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 2.0,
+              "recentGames": [
+                2.0
+              ],
+              "recentAvg": 2.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.242,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.75,
+              "projected": 1.5,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079745",
+              "name": "Joshisa Trader",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 19.0,
+              "recentGames": [
+                19.0
+              ],
+              "recentAvg": 19.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.242,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.75,
+              "projected": 14.2,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079745",
+              "name": "Joshisa Trader",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 2.0,
+              "recentGames": [
+                2.0
+              ],
+              "recentAvg": 2.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.242,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.75,
+              "projected": 1.5,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5080819",
+              "name": "Davion Dozier",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 14.0,
+              "recentGames": [
+                14.0
+              ],
+              "recentAvg": 14.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.242,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.75,
+              "projected": 10.5,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5080819",
+              "name": "Davion Dozier",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 2.0,
+              "recentGames": [
+                2.0
+              ],
+              "recentAvg": 2.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.242,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.75,
+              "projected": 1.5,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "4870590",
+              "name": "Raul Aguirre Jr.",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 18.0,
+              "recentGames": [
+                18.0
+              ],
+              "recentAvg": 18.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 18.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "4870590",
+              "name": "Raul Aguirre Jr.",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 0.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "4870877",
+              "name": "King Mack",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 7.0,
+              "recentGames": [
+                7.0
+              ],
+              "recentAvg": 7.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 7.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "4870877",
+              "name": "King Mack",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 0.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079666",
+              "name": "Ronnie Royal III",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 7.0,
+              "recentGames": [
+                7.0
+              ],
+              "recentAvg": 7.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 7.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079666",
+              "name": "Ronnie Royal III",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 0.0,
+              "confidence": "Low"
+            }
+          ]
+        },
+        {
+          "team": "Richmond",
+          "opponent": "NC State",
+          "homeAway": "away",
+          "players": [
+            {
+              "playerId": "5083373",
+              "name": "Ashten Snelsire",
+              "category": "passing",
+              "statType": "YDS",
+              "label": "Passing Yards",
+              "seasonAvg": 230.0,
+              "recentGames": [
+                199.0,
+                261.0
+              ],
+              "recentAvg": 230.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "opponentRecentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 310.5,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5083373",
+              "name": "Ashten Snelsire",
+              "category": "passing",
+              "statType": "TD",
+              "label": "Passing TDs",
+              "seasonAvg": 3.0,
+              "recentGames": [
+                3.0,
+                3.0
+              ],
+              "recentAvg": 3.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "opponentRecentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 4.1,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5153983",
+              "name": "Aziz Foster-Powell",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 71.0,
+              "recentGames": [
+                108.0,
+                34.0
+              ],
+              "recentAvg": 71.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": 0.482,
+              "opponentRecentValue": 0.482,
+              "leagueAvgValue": 0.369,
+              "opponentRank": 117,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.306,
+              "projected": 92.7,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5153977",
+              "name": "Jamaal Brown",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 40.0,
+              "recentGames": [
+                44.0,
+                36.0
+              ],
+              "recentAvg": 40.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": 0.482,
+              "opponentRecentValue": 0.482,
+              "leagueAvgValue": 0.369,
+              "opponentRank": 117,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.306,
+              "projected": 52.2,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5402260",
+              "name": "Bryce Allen",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 71.5,
+              "recentGames": [
+                106.0,
+                37.0
+              ],
+              "recentAvg": 71.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "opponentRecentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 96.5,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5402260",
+              "name": "Bryce Allen",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 3.5,
+              "recentGames": [
+                4.0,
+                3.0
+              ],
+              "recentAvg": 3.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "opponentRecentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 4.7,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5083372",
+              "name": "Quanye Veney",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 55.5,
+              "recentGames": [
+                38.0,
+                73.0
+              ],
+              "recentAvg": 55.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "opponentRecentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 74.9,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5083372",
+              "name": "Quanye Veney",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 3.0,
+              "recentGames": [
+                3.0,
+                3.0
+              ],
+              "recentAvg": 3.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "opponentRecentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 4.1,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5083381",
+              "name": "Sean Clarke",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 41.5,
+              "recentGames": [
+                3.0,
+                80.0
+              ],
+              "recentAvg": 41.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "opponentRecentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 56.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5083381",
+              "name": "Sean Clarke",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 4.5,
+              "recentGames": [
+                2.0,
+                7.0
+              ],
+              "recentAvg": 4.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.583,
+              "opponentRecentValue": 0.583,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 130,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 6.1,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5226836",
+              "name": "Blake Houser",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 9.5,
+              "recentGames": [
+                7.0,
+                12.0
+              ],
+              "recentAvg": 9.5,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.255,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 127,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 12.8,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5226836",
+              "name": "Blake Houser",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.5,
+              "recentGames": [
+                1.0,
+                0.0
+              ],
+              "recentAvg": 0.5,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.255,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 127,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 0.7,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5299852",
+              "name": "Jackson Thorne",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 6.0,
+              "recentGames": [
+                6.0,
+                6.0
+              ],
+              "recentAvg": 6.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.255,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 127,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 8.1,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5299852",
+              "name": "Jackson Thorne",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0,
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.255,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 127,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 0.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5226848",
+              "name": "Braxton Lassiter",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 4.5,
+              "recentGames": [
+                4.0,
+                5.0
+              ],
+              "recentAvg": 4.5,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.255,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 127,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 6.1,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5226848",
+              "name": "Braxton Lassiter",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0,
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.255,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 127,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 0.0,
+              "confidence": "Low"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": 401858215,
+      "startDate": "2026-09-11T23:00:00.000Z",
+      "homeTeam": "Louisville",
+      "awayTeam": "Villanova",
+      "teams": [
+        {
+          "team": "Louisville",
+          "opponent": "Villanova",
+          "homeAway": "home",
+          "players": [
+            {
+              "playerId": "5078278",
+              "name": "Lincoln Kienholz",
+              "category": "passing",
+              "statType": "YDS",
+              "label": "Passing Yards",
+              "seasonAvg": 307.0,
+              "recentGames": [
+                307.0
+              ],
+              "recentAvg": 307.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.372,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.975,
+              "projected": 299.4,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5078278",
+              "name": "Lincoln Kienholz",
+              "category": "passing",
+              "statType": "TD",
+              "label": "Passing TDs",
+              "seasonAvg": 2.0,
+              "recentGames": [
+                2.0
+              ],
+              "recentAvg": 2.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.372,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.975,
+              "projected": 2.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5078278",
+              "name": "Lincoln Kienholz",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 69.0,
+              "recentGames": [
+                69.0
+              ],
+              "recentAvg": 69.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.353,
+              "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.957,
+              "projected": 66.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "4923046",
+              "name": "Keyjuan Brown",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 56.0,
+              "recentGames": [
+                56.0
+              ],
+              "recentAvg": 56.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.353,
+              "leagueAvgValue": 0.369,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.957,
+              "projected": 53.6,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5294063",
+              "name": "Tre Richardson",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 83.0,
+              "recentGames": [
+                83.0
+              ],
+              "recentAvg": 83.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.372,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.975,
+              "projected": 81.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5294063",
+              "name": "Tre Richardson",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 4.0,
+              "recentGames": [
+                4.0
+              ],
+              "recentAvg": 4.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.372,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.975,
+              "projected": 3.9,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5085609",
+              "name": "Treyshun Hurry",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 67.0,
+              "recentGames": [
+                67.0
+              ],
+              "recentAvg": 67.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.372,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.975,
+              "projected": 65.4,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5085609",
+              "name": "Treyshun Hurry",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 4.0,
+              "recentGames": [
+                4.0
+              ],
+              "recentAvg": 4.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.372,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.975,
+              "projected": 3.9,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5086096",
+              "name": "Lawayne McCoy",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 62.0,
+              "recentGames": [
+                62.0
+              ],
+              "recentAvg": 62.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.372,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.975,
+              "projected": 60.5,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5086096",
+              "name": "Lawayne McCoy",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 2.0,
+              "recentGames": [
+                2.0
+              ],
+              "recentAvg": 2.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": null,
+              "opponentRecentValue": 0.372,
+              "leagueAvgValue": 0.382,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 0.975,
+              "projected": 2.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "4869698",
+              "name": "Koen Entringer",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 7.0,
+              "recentGames": [
+                7.0
+              ],
+              "recentAvg": 7.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 7.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "4869698",
+              "name": "Koen Entringer",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 0.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079330",
+              "name": "T.J. Capers",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 7.0,
+              "recentGames": [
+                7.0
+              ],
+              "recentAvg": 7.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 7.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5079330",
+              "name": "T.J. Capers",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 0.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "4870664",
+              "name": "Stanquan Clark",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 6.0,
+              "recentGames": [
+                6.0
+              ],
+              "recentAvg": 6.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 6.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "4870664",
+              "name": "Stanquan Clark",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": null,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": null,
+              "totalTeamsRanked": null,
+              "matchupFactor": 1.0,
+              "projected": 0.0,
+              "confidence": "Low"
+            }
+          ]
+        },
+        {
+          "team": "Villanova",
+          "opponent": "Louisville",
+          "homeAway": "away",
+          "players": [
+            {
+              "playerId": "4875733",
+              "name": "Pat McQuaide",
+              "category": "passing",
+              "statType": "YDS",
+              "label": "Passing Yards",
+              "seasonAvg": 244.0,
+              "recentGames": [
+                270.0,
+                218.0
+              ],
+              "recentAvg": 244.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.4,
+              "opponentRecentValue": 0.4,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.048,
+              "projected": 255.8,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "4875733",
+              "name": "Pat McQuaide",
+              "category": "passing",
+              "statType": "TD",
+              "label": "Passing TDs",
+              "seasonAvg": 1.5,
+              "recentGames": [
+                1.0,
+                2.0
+              ],
+              "recentAvg": 1.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.4,
+              "opponentRecentValue": 0.4,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.048,
+              "projected": 1.6,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5154013",
+              "name": "Isaiah Ragland",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 68.0,
+              "recentGames": [
+                94.0,
+                42.0
+              ],
+              "recentAvg": 68.0,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": 0.524,
+              "opponentRecentValue": 0.524,
+              "leagueAvgValue": 0.369,
+              "opponentRank": 126,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 91.8,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5154007",
+              "name": "Ja'briel Mace",
+              "category": "rushing",
+              "statType": "YDS",
+              "label": "Rushing Yards",
+              "seasonAvg": 63.5,
+              "recentGames": [
+                57.0,
+                70.0
+              ],
+              "recentAvg": 63.5,
+              "opponentMatchupMetric": "defense.rushingPlays.successRate",
+              "opponentValue": 0.524,
+              "opponentRecentValue": 0.524,
+              "leagueAvgValue": 0.369,
+              "opponentRank": 126,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.35,
+              "projected": 85.7,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5402298",
+              "name": "Jake Hilton",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 79.0,
+              "recentGames": [
+                132.0,
+                26.0
+              ],
+              "recentAvg": 79.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.4,
+              "opponentRecentValue": 0.4,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.048,
+              "projected": 82.8,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5402298",
+              "name": "Jake Hilton",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 3.0,
+              "recentGames": [
+                4.0,
+                2.0
+              ],
+              "recentAvg": 3.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.4,
+              "opponentRecentValue": 0.4,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.048,
+              "projected": 3.1,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5226962",
+              "name": "Brandon Binkowski",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 63.5,
+              "recentGames": [
+                56.0,
+                71.0
+              ],
+              "recentAvg": 63.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.4,
+              "opponentRecentValue": 0.4,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.048,
+              "projected": 66.6,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5226962",
+              "name": "Brandon Binkowski",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 3.5,
+              "recentGames": [
+                4.0,
+                3.0
+              ],
+              "recentAvg": 3.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.4,
+              "opponentRecentValue": 0.4,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.048,
+              "projected": 3.7,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5301181",
+              "name": "Braden Reed",
+              "category": "receiving",
+              "statType": "YDS",
+              "label": "Receiving Yards",
+              "seasonAvg": 46.5,
+              "recentGames": [
+                25.0,
+                68.0
+              ],
+              "recentAvg": 46.5,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.4,
+              "opponentRecentValue": 0.4,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.048,
+              "projected": 48.7,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5301181",
+              "name": "Braden Reed",
+              "category": "receiving",
+              "statType": "REC",
+              "label": "Receptions",
+              "seasonAvg": 4.0,
+              "recentGames": [
+                3.0,
+                5.0
+              ],
+              "recentAvg": 4.0,
+              "opponentMatchupMetric": "defense.passingPlays.successRate",
+              "opponentValue": 0.4,
+              "opponentRecentValue": 0.4,
+              "leagueAvgValue": 0.382,
+              "opponentRank": 76,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.048,
+              "projected": 4.2,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5226951",
+              "name": "Omari Bursey",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 14.5,
+              "recentGames": [
+                15.0,
+                14.0
+              ],
+              "recentAvg": 14.5,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.162,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 99,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.167,
+              "projected": 16.9,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5226951",
+              "name": "Omari Bursey",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.5,
+              "recentGames": [
+                1.0,
+                0.0
+              ],
+              "recentAvg": 0.5,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.162,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 99,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.167,
+              "projected": 0.6,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5083291",
+              "name": "Garrett Rogan",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 7.0,
+              "recentGames": [
+                7.0,
+                7.0
+              ],
+              "recentAvg": 7.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.162,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 99,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.167,
+              "projected": 8.2,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5083291",
+              "name": "Garrett Rogan",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.0,
+              "recentGames": [
+                0.0,
+                0.0
+              ],
+              "recentAvg": 0.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.162,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 99,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.167,
+              "projected": 0.0,
+              "confidence": "Low"
+            },
+            {
+              "playerId": "5226948",
+              "name": "Jamie Tyson",
+              "category": "defensive",
+              "statType": "TOT",
+              "label": "Total Tackles",
+              "seasonAvg": 6.0,
+              "recentGames": [
+                4.0,
+                8.0
+              ],
+              "recentAvg": 6.0,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.162,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 99,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.167,
+              "projected": 7.0,
+              "confidence": "Medium"
+            },
+            {
+              "playerId": "5226948",
+              "name": "Jamie Tyson",
+              "category": "defensive",
+              "statType": "SACKS",
+              "label": "Sacks",
+              "seasonAvg": 0.5,
+              "recentGames": [
+                0.0,
+                1.0
+              ],
+              "recentAvg": 0.5,
+              "opponentMatchupMetric": "offense.havoc.total",
+              "opponentValue": 0.162,
+              "opponentRecentValue": null,
+              "leagueAvgValue": 0.139,
+              "opponentRank": 99,
+              "totalTeamsRanked": 138,
+              "matchupFactor": 1.167,
+              "projected": 0.6,
               "confidence": "Low"
             }
           ]
