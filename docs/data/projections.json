@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T05:04:28.094350+00:00",
+  "generatedAt": "2026-10-01T17:40:02.508138+00:00",
   "season": 2026,
   "seasonType": "regular",
   "games": [
@@ -412,8 +412,8 @@
               "seasonAvg": 181.0,
               "recentGames": [
                 203.0,
-                309.0,
-                31.0
+                31.0,
+                309.0
               ],
               "recentAvg": 181.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -435,8 +435,8 @@
               "seasonAvg": 1.3,
               "recentGames": [
                 0.0,
-                4.0,
-                0.0
+                0.0,
+                4.0
               ],
               "recentAvg": 1.3,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -458,8 +458,8 @@
               "seasonAvg": 46.2,
               "recentGames": [
                 102.0,
-                42.0,
                 19.0,
+                42.0,
                 22.0
               ],
               "recentAvg": 46.2,
@@ -482,8 +482,8 @@
               "seasonAvg": 37.5,
               "recentGames": [
                 0.0,
-                50.0,
                 70.0,
+                50.0,
                 30.0
               ],
               "recentAvg": 37.5,
@@ -506,8 +506,8 @@
               "seasonAvg": 39.5,
               "recentGames": [
                 48.0,
-                66.0,
                 17.0,
+                66.0,
                 27.0
               ],
               "recentAvg": 39.5,
@@ -530,8 +530,8 @@
               "seasonAvg": 5.0,
               "recentGames": [
                 5.0,
-                6.0,
                 3.0,
+                6.0,
                 6.0
               ],
               "recentAvg": 5.0,
@@ -554,8 +554,8 @@
               "seasonAvg": 32.2,
               "recentGames": [
                 60.0,
-                35.0,
                 14.0,
+                35.0,
                 20.0
               ],
               "recentAvg": 32.2,
@@ -578,8 +578,8 @@
               "seasonAvg": 3.0,
               "recentGames": [
                 7.0,
-                2.0,
                 1.0,
+                2.0,
                 2.0
               ],
               "recentAvg": 3.0,
@@ -659,7 +659,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 117,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.237,
+              "matchupFactor": 1.236,
               "projected": 9.6,
               "confidence": "Medium"
             },
@@ -683,7 +683,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 117,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.237,
+              "matchupFactor": 1.236,
               "projected": 0.0,
               "confidence": "Low"
             },
@@ -696,8 +696,8 @@
               "seasonAvg": 5.5,
               "recentGames": [
                 1.0,
-                8.0,
                 5.0,
+                8.0,
                 8.0
               ],
               "recentAvg": 5.5,
@@ -707,7 +707,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 117,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.237,
+              "matchupFactor": 1.236,
               "projected": 6.8,
               "confidence": "Low"
             },
@@ -731,7 +731,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 117,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.237,
+              "matchupFactor": 1.236,
               "projected": 0.0,
               "confidence": "Low"
             },
@@ -744,8 +744,8 @@
               "seasonAvg": 4.0,
               "recentGames": [
                 4.0,
-                2.0,
                 5.0,
+                2.0,
                 5.0
               ],
               "recentAvg": 4.0,
@@ -755,7 +755,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 117,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.237,
+              "matchupFactor": 1.236,
               "projected": 4.9,
               "confidence": "Medium"
             },
@@ -779,7 +779,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 117,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.237,
+              "matchupFactor": 1.236,
               "projected": 0.0,
               "confidence": "Low"
             }
@@ -806,8 +806,8 @@
               "label": "Passing Yards",
               "seasonAvg": 176.5,
               "recentGames": [
-                227.0,
-                126.0
+                126.0,
+                227.0
               ],
               "recentAvg": 176.5,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -828,8 +828,8 @@
               "label": "Passing TDs",
               "seasonAvg": 0.5,
               "recentGames": [
-                1.0,
-                0.0
+                0.0,
+                1.0
               ],
               "recentAvg": 0.5,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -851,9 +851,9 @@
               "seasonAvg": 53.2,
               "recentGames": [
                 68.0,
-                73.0,
                 45.0,
-                27.0
+                27.0,
+                73.0
               ],
               "recentAvg": 53.2,
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
@@ -875,9 +875,9 @@
               "seasonAvg": 49.0,
               "recentGames": [
                 14.0,
-                35.0,
                 125.0,
-                22.0
+                22.0,
+                35.0
               ],
               "recentAvg": 49.0,
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
@@ -899,9 +899,9 @@
               "seasonAvg": 50.5,
               "recentGames": [
                 38.0,
-                99.0,
                 26.0,
-                39.0
+                39.0,
+                99.0
               ],
               "recentAvg": 50.5,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -923,9 +923,9 @@
               "seasonAvg": 3.8,
               "recentGames": [
                 2.0,
-                4.0,
                 3.0,
-                6.0
+                6.0,
+                4.0
               ],
               "recentAvg": 3.8,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -947,8 +947,8 @@
               "seasonAvg": 30.8,
               "recentGames": [
                 38.0,
-                71.0,
-                14.0
+                14.0,
+                71.0
               ],
               "recentAvg": 41.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -970,8 +970,8 @@
               "seasonAvg": 3.0,
               "recentGames": [
                 5.0,
-                5.0,
-                2.0
+                2.0,
+                5.0
               ],
               "recentAvg": 4.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -993,9 +993,9 @@
               "seasonAvg": 26.0,
               "recentGames": [
                 23.0,
-                30.0,
                 33.0,
-                18.0
+                18.0,
+                30.0
               ],
               "recentAvg": 26.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -1018,8 +1018,8 @@
               "recentGames": [
                 2.0,
                 4.0,
-                4.0,
-                2.0
+                2.0,
+                4.0
               ],
               "recentAvg": 3.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -1041,9 +1041,9 @@
               "seasonAvg": 8.8,
               "recentGames": [
                 8.0,
-                10.0,
                 8.0,
-                9.0
+                9.0,
+                10.0
               ],
               "recentAvg": 8.8,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -1089,9 +1089,9 @@
               "seasonAvg": 7.8,
               "recentGames": [
                 1.0,
-                7.0,
                 12.0,
-                11.0
+                11.0,
+                7.0
               ],
               "recentAvg": 7.8,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -1113,9 +1113,9 @@
               "seasonAvg": 0.6,
               "recentGames": [
                 0.0,
-                1.0,
                 0.0,
-                1.5
+                1.5,
+                1.0
               ],
               "recentAvg": 0.6,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -1137,9 +1137,9 @@
               "seasonAvg": 5.2,
               "recentGames": [
                 5.0,
-                5.0,
                 8.0,
-                3.0
+                3.0,
+                5.0
               ],
               "recentAvg": 5.2,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -1192,8 +1192,8 @@
               "seasonAvg": 294.5,
               "recentGames": [
                 483.0,
-                192.0,
                 270.0,
+                192.0,
                 233.0
               ],
               "recentAvg": 294.5,
@@ -1216,8 +1216,8 @@
               "seasonAvg": 1.5,
               "recentGames": [
                 3.0,
-                0.0,
                 1.0,
+                0.0,
                 2.0
               ],
               "recentAvg": 1.5,
@@ -1240,8 +1240,8 @@
               "seasonAvg": 88.0,
               "recentGames": [
                 34.0,
-                61.0,
                 133.0,
+                61.0,
                 124.0
               ],
               "recentAvg": 88.0,
@@ -1287,8 +1287,8 @@
               "seasonAvg": 70.2,
               "recentGames": [
                 122.0,
-                47.0,
                 69.0,
+                47.0,
                 43.0
               ],
               "recentAvg": 70.2,
@@ -1311,8 +1311,8 @@
               "seasonAvg": 4.8,
               "recentGames": [
                 10.0,
-                2.0,
                 5.0,
+                2.0,
                 2.0
               ],
               "recentAvg": 4.8,
@@ -1335,8 +1335,8 @@
               "seasonAvg": 69.0,
               "recentGames": [
                 80.0,
-                66.0,
                 65.0,
+                66.0,
                 65.0
               ],
               "recentAvg": 69.0,
@@ -1359,8 +1359,8 @@
               "seasonAvg": 4.2,
               "recentGames": [
                 7.0,
-                4.0,
                 3.0,
+                4.0,
                 3.0
               ],
               "recentAvg": 4.2,
@@ -1383,8 +1383,8 @@
               "seasonAvg": 40.2,
               "recentGames": [
                 73.0,
-                26.0,
                 38.0,
+                26.0,
                 24.0
               ],
               "recentAvg": 40.2,
@@ -1431,8 +1431,8 @@
               "seasonAvg": 8.2,
               "recentGames": [
                 9.0,
-                9.0,
                 8.0,
+                9.0,
                 7.0
               ],
               "recentAvg": 8.2,
@@ -1442,7 +1442,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 67,
               "totalTeamsRanked": 138,
-              "matchupFactor": 0.984,
+              "matchupFactor": 0.983,
               "projected": 8.1,
               "confidence": "High"
             },
@@ -1466,7 +1466,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 67,
               "totalTeamsRanked": 138,
-              "matchupFactor": 0.984,
+              "matchupFactor": 0.983,
               "projected": 0.0,
               "confidence": "Low"
             },
@@ -1479,8 +1479,8 @@
               "seasonAvg": 6.8,
               "recentGames": [
                 8.0,
-                8.0,
                 6.0,
+                8.0,
                 5.0
               ],
               "recentAvg": 6.8,
@@ -1490,7 +1490,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 67,
               "totalTeamsRanked": 138,
-              "matchupFactor": 0.984,
+              "matchupFactor": 0.983,
               "projected": 6.6,
               "confidence": "High"
             },
@@ -1503,8 +1503,8 @@
               "seasonAvg": 0.5,
               "recentGames": [
                 0.0,
-                0.0,
                 1.5,
+                0.0,
                 0.5
               ],
               "recentAvg": 0.5,
@@ -1514,7 +1514,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 67,
               "totalTeamsRanked": 138,
-              "matchupFactor": 0.984,
+              "matchupFactor": 0.983,
               "projected": 0.5,
               "confidence": "Low"
             },
@@ -1527,8 +1527,8 @@
               "seasonAvg": 6.0,
               "recentGames": [
                 11.0,
-                7.0,
                 2.0,
+                7.0,
                 4.0
               ],
               "recentAvg": 6.0,
@@ -1538,7 +1538,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 67,
               "totalTeamsRanked": 138,
-              "matchupFactor": 0.984,
+              "matchupFactor": 0.983,
               "projected": 5.9,
               "confidence": "Low"
             },
@@ -1562,7 +1562,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 67,
               "totalTeamsRanked": 138,
-              "matchupFactor": 0.984,
+              "matchupFactor": 0.983,
               "projected": 0.0,
               "confidence": "Low"
             }
@@ -1591,26 +1591,6 @@
       ]
     },
     {
-      "gameId": 401908367,
-      "startDate": "2026-10-02T23:00:00.000Z",
-      "homeTeam": "Ursinus",
-      "awayTeam": "Muhlenberg",
-      "teams": [
-        {
-          "team": "Ursinus",
-          "opponent": "Muhlenberg",
-          "homeAway": "home",
-          "players": []
-        },
-        {
-          "team": "Muhlenberg",
-          "opponent": "Ursinus",
-          "homeAway": "away",
-          "players": []
-        }
-      ]
-    },
-    {
       "gameId": 401871050,
       "startDate": "2026-10-02T23:00:00.000Z",
       "homeTeam": "Delaware",
@@ -1630,8 +1610,8 @@
               "seasonAvg": 209.5,
               "recentGames": [
                 330.0,
-                182.0,
                 302.0,
+                182.0,
                 24.0
               ],
               "recentAvg": 209.5,
@@ -1654,8 +1634,8 @@
               "seasonAvg": 1.2,
               "recentGames": [
                 2.0,
-                1.0,
                 2.0,
+                1.0,
                 0.0
               ],
               "recentAvg": 1.2,
@@ -1678,8 +1658,8 @@
               "seasonAvg": 51.2,
               "recentGames": [
                 19.0,
-                109.0,
                 28.0,
+                109.0,
                 49.0
               ],
               "recentAvg": 51.2,
@@ -1702,8 +1682,8 @@
               "seasonAvg": 15.0,
               "recentGames": [
                 13.0,
-                14.0,
                 27.0,
+                14.0,
                 6.0
               ],
               "recentAvg": 15.0,
@@ -1726,8 +1706,8 @@
               "seasonAvg": 73.0,
               "recentGames": [
                 73.0,
-                30.0,
                 185.0,
+                30.0,
                 4.0
               ],
               "recentAvg": 73.0,
@@ -1750,8 +1730,8 @@
               "seasonAvg": 5.0,
               "recentGames": [
                 6.0,
-                3.0,
                 9.0,
+                3.0,
                 2.0
               ],
               "recentAvg": 5.0,
@@ -1774,8 +1754,8 @@
               "seasonAvg": 86.0,
               "recentGames": [
                 64.0,
-                142.0,
-                52.0
+                52.0,
+                142.0
               ],
               "recentAvg": 86.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -1797,8 +1777,8 @@
               "seasonAvg": 4.3,
               "recentGames": [
                 3.0,
-                4.0,
-                6.0
+                6.0,
+                4.0
               ],
               "recentAvg": 4.3,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -1820,8 +1800,8 @@
               "seasonAvg": 33.0,
               "recentGames": [
                 80.0,
-                42.0,
-                10.0
+                10.0,
+                42.0
               ],
               "recentAvg": 44.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -1866,8 +1846,8 @@
               "seasonAvg": 8.5,
               "recentGames": [
                 4.0,
-                9.0,
                 8.0,
+                9.0,
                 13.0
               ],
               "recentAvg": 8.5,
@@ -1877,7 +1857,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 78,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.033,
+              "matchupFactor": 1.032,
               "projected": 8.8,
               "confidence": "Medium"
             },
@@ -1890,8 +1870,8 @@
               "seasonAvg": 0.6,
               "recentGames": [
                 0.5,
-                1.5,
                 0.0,
+                1.5,
                 0.5
               ],
               "recentAvg": 0.6,
@@ -1901,7 +1881,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 78,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.033,
+              "matchupFactor": 1.032,
               "projected": 0.6,
               "confidence": "Low"
             },
@@ -1914,8 +1894,8 @@
               "seasonAvg": 6.0,
               "recentGames": [
                 5.0,
-                2.0,
                 6.0,
+                2.0,
                 11.0
               ],
               "recentAvg": 6.0,
@@ -1925,7 +1905,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 78,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.033,
+              "matchupFactor": 1.032,
               "projected": 6.2,
               "confidence": "Low"
             },
@@ -1938,8 +1918,8 @@
               "seasonAvg": 1.0,
               "recentGames": [
                 0.5,
-                0.5,
                 1.0,
+                0.5,
                 2.0
               ],
               "recentAvg": 1.0,
@@ -1949,7 +1929,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 78,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.033,
+              "matchupFactor": 1.032,
               "projected": 1.0,
               "confidence": "Low"
             },
@@ -1962,8 +1942,8 @@
               "seasonAvg": 7.3,
               "recentGames": [
                 6.0,
-                10.0,
-                6.0
+                6.0,
+                10.0
               ],
               "recentAvg": 7.3,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -1972,7 +1952,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 78,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.033,
+              "matchupFactor": 1.032,
               "projected": 7.6,
               "confidence": "Medium"
             },
@@ -1995,7 +1975,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 78,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.033,
+              "matchupFactor": 1.032,
               "projected": 0.0,
               "confidence": "Low"
             }
@@ -2015,9 +1995,9 @@
               "seasonAvg": 194.8,
               "recentGames": [
                 230.0,
-                122.0,
                 211.0,
-                216.0
+                216.0,
+                122.0
               ],
               "recentAvg": 194.8,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -2039,9 +2019,9 @@
               "seasonAvg": 1.8,
               "recentGames": [
                 1.0,
-                1.0,
                 3.0,
-                2.0
+                2.0,
+                1.0
               ],
               "recentAvg": 1.8,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -2063,9 +2043,9 @@
               "seasonAvg": 77.5,
               "recentGames": [
                 51.0,
-                67.0,
                 26.0,
-                166.0
+                166.0,
+                67.0
               ],
               "recentAvg": 77.5,
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
@@ -2087,9 +2067,9 @@
               "seasonAvg": 50.5,
               "recentGames": [
                 25.0,
-                76.0,
                 35.0,
-                66.0
+                66.0,
+                76.0
               ],
               "recentAvg": 50.5,
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
@@ -2111,9 +2091,9 @@
               "seasonAvg": 94.8,
               "recentGames": [
                 73.0,
-                69.0,
                 88.0,
-                149.0
+                149.0,
+                69.0
               ],
               "recentAvg": 94.8,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -2135,9 +2115,9 @@
               "seasonAvg": 3.5,
               "recentGames": [
                 3.0,
-                2.0,
                 4.0,
-                5.0
+                5.0,
+                2.0
               ],
               "recentAvg": 3.5,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -2159,9 +2139,9 @@
               "seasonAvg": 31.0,
               "recentGames": [
                 49.0,
-                4.0,
                 37.0,
-                34.0
+                34.0,
+                4.0
               ],
               "recentAvg": 31.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -2183,8 +2163,8 @@
               "seasonAvg": 2.0,
               "recentGames": [
                 2.0,
-                1.0,
                 4.0,
+                1.0,
                 1.0
               ],
               "recentAvg": 2.0,
@@ -2206,9 +2186,9 @@
               "label": "Receiving Yards",
               "seasonAvg": 38.3,
               "recentGames": [
-                54.0,
                 43.0,
-                18.0
+                18.0,
+                54.0
               ],
               "recentAvg": 38.3,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -2229,9 +2209,9 @@
               "label": "Receptions",
               "seasonAvg": 2.3,
               "recentGames": [
-                1.0,
                 4.0,
-                2.0
+                2.0,
+                1.0
               ],
               "recentAvg": 2.3,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -2253,8 +2233,8 @@
               "seasonAvg": 5.0,
               "recentGames": [
                 7.0,
-                5.0,
                 3.0,
+                5.0,
                 5.0
               ],
               "recentAvg": 5.0,
@@ -2301,8 +2281,8 @@
               "seasonAvg": 5.3,
               "recentGames": [
                 7.0,
-                2.0,
-                7.0
+                7.0,
+                2.0
               ],
               "recentAvg": 5.3,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -2347,9 +2327,9 @@
               "seasonAvg": 3.8,
               "recentGames": [
                 7.0,
-                4.0,
                 2.0,
-                2.0
+                2.0,
+                4.0
               ],
               "recentAvg": 3.8,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -3176,6 +3156,26 @@
       ]
     },
     {
+      "gameId": 401908367,
+      "startDate": "2026-10-02T23:00:00.000Z",
+      "homeTeam": "Ursinus",
+      "awayTeam": "Muhlenberg",
+      "teams": [
+        {
+          "team": "Ursinus",
+          "opponent": "Muhlenberg",
+          "homeAway": "home",
+          "players": []
+        },
+        {
+          "team": "Muhlenberg",
+          "opponent": "Ursinus",
+          "homeAway": "away",
+          "players": []
+        }
+      ]
+    },
+    {
       "gameId": 401908686,
       "startDate": "2026-10-02T23:30:00.000Z",
       "homeTeam": "St. Lawrence",
@@ -3984,8 +3984,8 @@
               "recentGames": [
                 363.0,
                 326.0,
-                205.0,
-                111.0
+                111.0,
+                205.0
               ],
               "recentAvg": 251.2,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -4032,8 +4032,8 @@
               "recentGames": [
                 42.0,
                 37.0,
-                50.0,
-                41.0
+                41.0,
+                50.0
               ],
               "recentAvg": 42.5,
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
@@ -4056,8 +4056,8 @@
               "recentGames": [
                 44.0,
                 27.0,
-                13.0,
-                1.0
+                1.0,
+                13.0
               ],
               "recentAvg": 21.2,
               "opponentMatchupMetric": "defense.rushingPlays.successRate",
@@ -4080,8 +4080,8 @@
               "recentGames": [
                 180.0,
                 151.0,
-                30.0,
-                23.0
+                23.0,
+                30.0
               ],
               "recentAvg": 96.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -4128,8 +4128,8 @@
               "recentGames": [
                 93.0,
                 31.0,
-                48.0,
-                8.0
+                8.0,
+                48.0
               ],
               "recentAvg": 45.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -4152,8 +4152,8 @@
               "recentGames": [
                 3.0,
                 4.0,
-                7.0,
-                1.0
+                1.0,
+                7.0
               ],
               "recentAvg": 3.8,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -4176,8 +4176,8 @@
               "recentGames": [
                 11.0,
                 60.0,
-                21.0,
-                44.0
+                44.0,
+                21.0
               ],
               "recentAvg": 34.0,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -4200,8 +4200,8 @@
               "recentGames": [
                 1.0,
                 6.0,
-                3.0,
-                1.0
+                1.0,
+                3.0
               ],
               "recentAvg": 2.8,
               "opponentMatchupMetric": "defense.passingPlays.successRate",
@@ -4224,8 +4224,8 @@
               "recentGames": [
                 12.0,
                 10.0,
-                7.0,
-                5.0
+                5.0,
+                7.0
               ],
               "recentAvg": 8.5,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -4272,8 +4272,8 @@
               "recentGames": [
                 4.0,
                 9.0,
-                3.0,
-                8.0
+                8.0,
+                3.0
               ],
               "recentAvg": 6.0,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -4319,8 +4319,8 @@
               "seasonAvg": 7.7,
               "recentGames": [
                 6.0,
-                9.0,
-                8.0
+                8.0,
+                9.0
               ],
               "recentAvg": 7.7,
               "opponentMatchupMetric": "offense.havoc.total",
@@ -5156,8 +5156,8 @@
               "seasonAvg": 208.0,
               "recentGames": [
                 200.0,
-                243.0,
                 216.0,
+                243.0,
                 173.0
               ],
               "recentAvg": 208.0,
@@ -5204,8 +5204,8 @@
               "seasonAvg": 86.2,
               "recentGames": [
                 103.0,
-                32.0,
                 106.0,
+                32.0,
                 104.0
               ],
               "recentAvg": 86.2,
@@ -5228,8 +5228,8 @@
               "seasonAvg": 18.2,
               "recentGames": [
                 25.0,
-                58.0,
                 -24.0,
+                58.0,
                 14.0
               ],
               "recentAvg": 18.2,
@@ -5252,8 +5252,8 @@
               "seasonAvg": 77.5,
               "recentGames": [
                 118.0,
-                72.0,
                 88.0,
+                72.0,
                 32.0
               ],
               "recentAvg": 77.5,
@@ -5276,8 +5276,8 @@
               "seasonAvg": 7.2,
               "recentGames": [
                 8.0,
-                9.0,
                 6.0,
+                9.0,
                 6.0
               ],
               "recentAvg": 7.2,
@@ -5300,8 +5300,8 @@
               "seasonAvg": 35.0,
               "recentGames": [
                 9.0,
-                34.0,
                 32.0,
+                34.0,
                 65.0
               ],
               "recentAvg": 35.0,
@@ -5324,8 +5324,8 @@
               "seasonAvg": 2.0,
               "recentGames": [
                 1.0,
-                3.0,
                 1.0,
+                3.0,
                 3.0
               ],
               "recentAvg": 2.0,
@@ -5348,8 +5348,8 @@
               "seasonAvg": 24.2,
               "recentGames": [
                 37.0,
-                20.0,
                 22.0,
+                20.0,
                 18.0
               ],
               "recentAvg": 24.2,
@@ -5407,8 +5407,8 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 114,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.216,
-              "projected": 11.9,
+              "matchupFactor": 1.215,
+              "projected": 11.8,
               "confidence": "Low"
             },
             {
@@ -5431,7 +5431,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 114,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.216,
+              "matchupFactor": 1.215,
               "projected": 0.0,
               "confidence": "Low"
             },
@@ -5444,8 +5444,8 @@
               "seasonAvg": 6.0,
               "recentGames": [
                 4.0,
-                3.0,
                 7.0,
+                3.0,
                 10.0
               ],
               "recentAvg": 6.0,
@@ -5455,7 +5455,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 114,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.216,
+              "matchupFactor": 1.215,
               "projected": 7.3,
               "confidence": "Low"
             },
@@ -5479,7 +5479,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 114,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.216,
+              "matchupFactor": 1.215,
               "projected": 0.0,
               "confidence": "Low"
             },
@@ -5492,8 +5492,8 @@
               "seasonAvg": 5.5,
               "recentGames": [
                 2.0,
-                3.0,
                 11.0,
+                3.0,
                 6.0
               ],
               "recentAvg": 5.5,
@@ -5503,7 +5503,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 114,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.216,
+              "matchupFactor": 1.215,
               "projected": 6.7,
               "confidence": "Low"
             },
@@ -5527,7 +5527,7 @@
               "leagueAvgValue": 0.142,
               "opponentRank": 114,
               "totalTeamsRanked": 138,
-              "matchupFactor": 1.216,
+              "matchupFactor": 1.215,
               "projected": 0.3,
               "confidence": "Low"
             }
