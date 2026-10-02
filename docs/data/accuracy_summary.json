@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-10-02T04:55:00.158855+00:00",
-  "settledCount": 128,
+  "generatedAt": "2026-10-02T17:02:11.205194+00:00",
+  "settledCount": 181,
   "assumedZeroCount": 128,
-  "pendingCount": 224
+  "pendingCount": 267,
+  "meanError": 6.02,
+  "meanAbsError": 13.9,
+  "medianAbsError": 2.4,
+  "byConfidence": {
+    "High": {
+      "count": 5,
+      "meanAbsError": 5.98
+    },
+    "Medium": {
+      "count": 13,
+      "meanAbsError": 13.85
+    },
+    "Low": {
+      "count": 35,
+      "meanAbsError": 15.04
+    }
+  },
+  "byCategory": {
+    "defensive": {
+      "count": 24,
+      "meanAbsError": 1.07
+    },
+    "passing": {
+      "count": 6,
+      "meanAbsError": 33.67
+    },
+    "receiving": {
+      "count": 16,
+      "meanAbsError": 14.14
+    },
+    "rushing": {
+      "count": 7,
+      "meanAbsError": 40.36
+    }
+  }
 }
