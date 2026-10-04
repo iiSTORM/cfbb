@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-10-03T15:25:50.798834+00:00",
-  "settledCount": 295,
+  "generatedAt": "2026-10-04T05:10:23.855148+00:00",
+  "settledCount": 580,
   "assumedZeroCount": 128,
-  "pendingCount": 380,
-  "meanError": 2.7,
-  "meanAbsError": 15.95,
-  "medianAbsError": 2.0,
+  "pendingCount": 383,
+  "meanError": -3.86,
+  "meanAbsError": 17.31,
+  "medianAbsError": 2.4,
   "byConfidence": {
     "High": {
-      "count": 11,
-      "meanAbsError": 14.7
+      "count": 27,
+      "meanAbsError": 18.19
     },
     "Medium": {
-      "count": 44,
-      "meanAbsError": 18.91
+      "count": 121,
+      "meanAbsError": 22.27
     },
     "Low": {
-      "count": 112,
-      "meanAbsError": 14.92
+      "count": 304,
+      "meanAbsError": 15.26
     }
   },
   "byCategory": {
     "defensive": {
-      "count": 70,
-      "meanAbsError": 1.29
+      "count": 182,
+      "meanAbsError": 1.54
     },
     "passing": {
-      "count": 18,
-      "meanAbsError": 49.69
+      "count": 58,
+      "meanAbsError": 50.96
     },
     "receiving": {
-      "count": 58,
-      "meanAbsError": 15.79
+      "count": 156,
+      "meanAbsError": 16.48
     },
     "rushing": {
-      "count": 21,
-      "meanAbsError": 36.36
+      "count": 56,
+      "meanAbsError": 36.04
     }
   }
 }
