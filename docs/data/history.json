@@ -8094,11 +8094,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 1.161,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -48.4,
+      "absError": 48.4,
+      "assumedZero": true
     },
     {
       "gameId": 401856807,
@@ -8219,11 +8219,11 @@
       "leagueAvgValue": 0.399,
       "matchupFactor": 1.142,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -50.0,
+      "absError": 50.0,
+      "assumedZero": true
     },
     {
       "gameId": 401856807,
@@ -8244,11 +8244,11 @@
       "leagueAvgValue": 0.399,
       "matchupFactor": 1.142,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -3.0,
+      "absError": 3.0,
+      "assumedZero": true
     },
     {
       "gameId": 401856807,
@@ -8569,11 +8569,11 @@
       "leagueAvgValue": 0.399,
       "matchupFactor": 0.929,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -32.5,
+      "absError": 32.5,
+      "assumedZero": true
     },
     {
       "gameId": 401856807,
@@ -8594,11 +8594,11 @@
       "leagueAvgValue": 0.399,
       "matchupFactor": 0.929,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -1.9,
+      "absError": 1.9,
+      "assumedZero": true
     },
     {
       "gameId": 401856807,
@@ -8894,11 +8894,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 1.185,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -68.8,
+      "absError": 68.8,
+      "assumedZero": true
     },
     {
       "gameId": 401862787,
@@ -8969,11 +8969,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.004,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -52.9,
+      "absError": 52.9,
+      "assumedZero": true
     },
     {
       "gameId": 401862787,
@@ -8994,11 +8994,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.004,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -4.8,
+      "absError": 4.8,
+      "assumedZero": true
     },
     {
       "gameId": 401862787,
@@ -9694,11 +9694,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 0.974,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -27.0,
+      "absError": 27.0,
+      "assumedZero": true
     },
     {
       "gameId": 401858246,
@@ -10894,11 +10894,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 1.0,
       "confidence": "High",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -36.0,
+      "absError": 36.0,
+      "assumedZero": true
     },
     {
       "gameId": 401870840,
@@ -10969,11 +10969,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.75,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -31.9,
+      "absError": 31.9,
+      "assumedZero": true
     },
     {
       "gameId": 401870840,
@@ -10994,11 +10994,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.75,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -2.1,
+      "absError": 2.1,
+      "assumedZero": true
     },
     {
       "gameId": 401870840,
@@ -11919,11 +11919,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -6.2,
+      "absError": 6.2,
+      "assumedZero": true
     },
     {
       "gameId": 401868276,
@@ -11944,11 +11944,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": 0.0,
+      "absError": 0.0,
+      "assumedZero": true
     },
     {
       "gameId": 401868276,
@@ -12569,11 +12569,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.308,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -50.7,
+      "absError": 50.7,
+      "assumedZero": true
     },
     {
       "gameId": 401858251,
@@ -12594,11 +12594,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.308,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -2.3,
+      "absError": 2.3,
+      "assumedZero": true
     },
     {
       "gameId": 401858251,
@@ -12669,11 +12669,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 0.876,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -8.3,
+      "absError": 8.3,
+      "assumedZero": true
     },
     {
       "gameId": 401858251,
@@ -12694,11 +12694,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 0.876,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": 0.0,
+      "absError": 0.0,
+      "assumedZero": true
     },
     {
       "gameId": 401858251,
@@ -12719,11 +12719,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 0.876,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -6.1,
+      "absError": 6.1,
+      "assumedZero": true
     },
     {
       "gameId": 401858251,
@@ -12744,11 +12744,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 0.876,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": 0.0,
+      "absError": 0.0,
+      "assumedZero": true
     },
     {
       "gameId": 401858251,
@@ -12819,11 +12819,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -101.0,
+      "absError": 101.0,
+      "assumedZero": true
     },
     {
       "gameId": 401906652,
@@ -12844,11 +12844,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -9.0,
+      "absError": 9.0,
+      "assumedZero": true
     },
     {
       "gameId": 401906652,
@@ -12869,11 +12869,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": 0.0,
+      "absError": 0.0,
+      "assumedZero": true
     },
     {
       "gameId": 401867819,
@@ -13044,11 +13044,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.14,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -72.4,
+      "absError": 72.4,
+      "assumedZero": true
     },
     {
       "gameId": 401867819,
@@ -13069,11 +13069,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.14,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -3.4,
+      "absError": 3.4,
+      "assumedZero": true
     },
     {
       "gameId": 401867819,
@@ -13344,11 +13344,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 0.75,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -33.8,
+      "absError": 33.8,
+      "assumedZero": true
     },
     {
       "gameId": 401867819,
@@ -13444,11 +13444,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.855,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -21.4,
+      "absError": 21.4,
+      "assumedZero": true
     },
     {
       "gameId": 401867819,
@@ -13469,11 +13469,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.855,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -0.9,
+      "absError": 0.9,
+      "assumedZero": true
     },
     {
       "gameId": 401867819,
@@ -13494,11 +13494,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.855,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -33.5,
+      "absError": 33.5,
+      "assumedZero": true
     },
     {
       "gameId": 401867819,
@@ -13519,11 +13519,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.855,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -1.4,
+      "absError": 1.4,
+      "assumedZero": true
     },
     {
       "gameId": 401867819,
@@ -14244,11 +14244,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.945,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -26.5,
+      "absError": 26.5,
+      "assumedZero": true
     },
     {
       "gameId": 401866654,
@@ -14269,11 +14269,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.945,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -2.8,
+      "absError": 2.8,
+      "assumedZero": true
     },
     {
       "gameId": 401866654,
@@ -14294,11 +14294,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.945,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -22.2,
+      "absError": 22.2,
+      "assumedZero": true
     },
     {
       "gameId": 401866654,
@@ -14319,11 +14319,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.945,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -1.4,
+      "absError": 1.4,
+      "assumedZero": true
     },
     {
       "gameId": 401866654,
@@ -14844,11 +14844,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 0.75,
       "confidence": "High",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -4.2,
+      "absError": 4.2,
+      "assumedZero": true
     },
     {
       "gameId": 401858250,
@@ -14869,11 +14869,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 0.75,
       "confidence": "High",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -1.5,
+      "absError": 1.5,
+      "assumedZero": true
     },
     {
       "gameId": 401858250,
@@ -15494,11 +15494,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.221,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -45.8,
+      "absError": 45.8,
+      "assumedZero": true
     },
     {
       "gameId": 401867899,
@@ -15519,11 +15519,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.221,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -2.4,
+      "absError": 2.4,
+      "assumedZero": true
     },
     {
       "gameId": 401867899,
@@ -16094,11 +16094,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.865,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -83.7,
+      "absError": 83.7,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16119,11 +16119,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.865,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -0.3,
+      "absError": 0.3,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16144,11 +16144,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 1.273,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -59.4,
+      "absError": 59.4,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16169,11 +16169,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 1.273,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -27.1,
+      "absError": 27.1,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16194,11 +16194,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.865,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -29.6,
+      "absError": 29.6,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16219,11 +16219,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.865,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -1.6,
+      "absError": 1.6,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16244,11 +16244,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.865,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -22.3,
+      "absError": 22.3,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16269,11 +16269,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.865,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -2.2,
+      "absError": 2.2,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16294,11 +16294,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.865,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -17.5,
+      "absError": 17.5,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16319,11 +16319,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 0.865,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -1.7,
+      "absError": 1.7,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16344,11 +16344,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -8.2,
+      "absError": 8.2,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16369,11 +16369,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -0.2,
+      "absError": 0.2,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16394,11 +16394,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -6.6,
+      "absError": 6.6,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16419,11 +16419,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -0.2,
+      "absError": 0.2,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16444,11 +16444,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -6.2,
+      "absError": 6.2,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16469,11 +16469,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -0.1,
+      "absError": 0.1,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16494,11 +16494,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.293,
       "confidence": "High",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -229.4,
+      "absError": 229.4,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16519,11 +16519,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.293,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -1.6,
+      "absError": 1.6,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16544,11 +16544,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 1.175,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -57.8,
+      "absError": 57.8,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16569,11 +16569,11 @@
       "leagueAvgValue": 0.396,
       "matchupFactor": 1.175,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -18.0,
+      "absError": 18.0,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16594,11 +16594,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.293,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -55.3,
+      "absError": 55.3,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16619,11 +16619,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.293,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -4.1,
+      "absError": 4.1,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16644,11 +16644,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.293,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -30.8,
+      "absError": 30.8,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16669,11 +16669,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.293,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -3.1,
+      "absError": 3.1,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16694,11 +16694,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.293,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -36.2,
+      "absError": 36.2,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16719,11 +16719,11 @@
       "leagueAvgValue": 0.4,
       "matchupFactor": 1.293,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -3.9,
+      "absError": 3.9,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16744,11 +16744,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Medium",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -6.8,
+      "absError": 6.8,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16769,11 +16769,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": 0.0,
+      "absError": 0.0,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16794,11 +16794,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -4.8,
+      "absError": 4.8,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16819,11 +16819,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": 0.0,
+      "absError": 0.0,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16844,11 +16844,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -6.0,
+      "absError": 6.0,
+      "assumedZero": true
     },
     {
       "gameId": 401867910,
@@ -16869,11 +16869,11 @@
       "leagueAvgValue": 0.143,
       "matchupFactor": 1.0,
       "confidence": "Low",
-      "actual": null,
-      "settledAt": null,
-      "error": null,
-      "absError": null,
-      "assumedZero": false
+      "actual": 0.0,
+      "settledAt": "2026-10-08T18:07:30.328916+00:00",
+      "error": -0.2,
+      "absError": 0.2,
+      "assumedZero": true
     },
     {
       "gameId": 401871090,
