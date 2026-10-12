@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-11T16:59:05.652771+00:00",
-  "settledCount": 675,
-  "assumedZeroCount": 223,
-  "pendingCount": 288,
+  "generatedAt": "2026-10-12T05:15:05.266950+00:00",
+  "settledCount": 707,
+  "assumedZeroCount": 255,
+  "pendingCount": 256,
   "meanError": -3.86,
   "meanAbsError": 17.31,
   "medianAbsError": 2.4,
